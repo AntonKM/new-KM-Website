@@ -1,5 +1,5 @@
 ---
-title: 'Monatszusammenfassung Februar'
+title: 'Politische Ereignisse im Februar'
 description: '...'
 pubDate: 'Feb 19 2025'
 heroImage: '/FebruaryBlogpost.png'
