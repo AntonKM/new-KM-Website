@@ -1,0 +1,27 @@
+---
+// src/components/BlueskyFeed.astro
+
+const rssUrl = 'https://bsky.app/profile/did:plc:wanv52ef2iwub4r2m7yd5jae/rss';
+
+const fetchRSS = async () => {
+    const response = await fetch(rssUrl);
+    const text = await response.text();
+    const parser = new DOMParser();
+    const xmlDoc = parser.parseFromString(text, "text/xml");
+    const latestPost = xmlDoc.getElementsByTagName('item')[0];
+
+    return {
+        title: latestPost.getElementsByTagName('title')[0].textContent,
+        link: latestPost.getElementsByTagName('link')[0].textContent,
+        description: latestPost.getElementsByTagName('description')[0].textContent,
+    };
+};
+
+const latestPost = await fetchRSS();
+---
+
+<div>
+    <h2>Neuster Beitrag von Bluesky</h2>
+    <h3><a href={latestPost.link} target="_blank">{latestPost.title}</a></h3>
+    <p>{latestPost.description}</p>
+</div>
