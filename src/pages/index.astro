@@ -46,6 +46,37 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 					</a>
 				</p>
             </div>
+			<div class="rounded-box">
+				<div id="bluesky-rss">
+					<h2>Neuester Beitrag von Bluesky</h2>
+					<ul id="bluesky-rss-list"></ul>
+				  </div>
+				  <script>
+					const rssFeedUrl = 'https://bsky.app/profile/did:plc:wanv52ef2iwub4r2m7yd5jae/rss'; // RSS-Feed-Link von Bluesky
+					const rssFeedList = document.getElementById('bluesky-rss-list');
+				  
+					fetch(rssFeedUrl)
+					  .then(response => response.text())
+					  .then(data => {
+						const parser = new DOMParser();
+						const xmlDoc = parser.parseFromString(data, 'text/xml');
+						const items = xmlDoc.getElementsByTagName('item');
+				  
+						const latestItem = items[0];
+						const title = latestItem.getElementsByTagName('title')[0].textContent;
+						const link = latestItem.getElementsByTagName('link')[0].textContent;
+						const description = latestItem.getElementsByTagName('description')[0].textContent;
+				  
+						const listItem = document.createElement('li');
+						listItem.innerHTML = `
+						  <h3>${title}</h3>
+						  <p>${description}</p>
+						  <p><a href="${link}">Mehr lesen</a></p>
+						`;
+						rssFeedList.appendChild(listItem);
+					  });
+				  </script>
+            </div>
 		</main>
 		<Footer />
 	</body>
