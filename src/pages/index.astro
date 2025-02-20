@@ -46,27 +46,35 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 					</a>
 				</p>
             </div>
-			<div class="rounded-box">
+				<div id="feed">
+					<h2>Neuster Beitrag von Bluesky</h2>
+					<div id="latest-post"></div>
+				</div>
+				
 				<script>
+					const rssUrl = 'https://bsky.app/profile/did:plc:wanv52ef2iwub4r2m7yd5jae/rss'; // Ersetze dies mit deinem RSS-Feed-Link
+				
 					async function fetchRSS() {
-						const response = await fetch('https://bsky.app/profile/did:plc:wanv52ef2iwub4r2m7yd5jae/rss');
-						const data = await response.text();
-						const parser = new DOMParser();
-						const xmlDoc = parser.parseFromString(data, "text/xml");
-						const items = xmlDoc.getElementsByTagName('item');
-						if (items.length > 0) {
-							const latestItem = items[0];
-							const title = latestItem.getElementsByTagName('title')[0].textContent;
-							const link = latestItem.getElementsByTagName('link')[0].textContent;
-							document.getElementById('latest-post').innerHTML = `<a href="${link}" target="_blank">${title}</a>`;
+						try {
+							const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}&api_key=YOUR_API_KEY`);
+							const data = await response.json();
+							if (data.status === 'ok') {
+								const latestPost = data.items[0];
+								document.getElementById('latest-post').innerHTML = `
+									<h3><a href="${latestPost.link}" target="_blank">${latestPost.title}</a></h3>
+									<p>${latestPost.description}</p>
+								`;
+							} else {
+								document.getElementById('latest-post').innerText = 'Fehler beim Abrufen des Feeds.';
+							}
+						} catch (error) {
+							console.error('Fehler:', error);
+							document.getElementById('latest-post').innerText = 'Fehler beim Abrufen des Feeds.';
 						}
 					}
-			
-					window.onload = fetchRSS;
+				
+					fetchRSS();
 				</script>
-				  <h1>Neuster Bluesky Beitrag</h1>
-				  <div id="latest-post">Lade...</div>
-            </div>
 		</main>
 		<Footer />
 	</body>
