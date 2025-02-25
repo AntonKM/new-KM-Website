@@ -68,6 +68,18 @@ const posts = (await getCollection('blog')).sort(
 			ul a:hover img {
 				box-shadow: var(--box-shadow);
 			}
+			.search-bar {
+				margin-bottom: 2rem;
+				text-align: center;
+			}
+			.search-bar input {
+				padding: 0.5rem;
+				border: 1px solid rgb(var(--gray));
+				border-radius: 20px;
+				width: 100%;
+				max-width: 400px;
+				font-size: 1rem;
+			}
 			@media (max-width: 720px) {
 				ul {
 					gap: 0.5em;
@@ -89,6 +101,9 @@ const posts = (await getCollection('blog')).sort(
 		<Header />
 		<main>
 			<section>
+				<div class="search-bar">
+					<input type="text" placeholder="Suche..." />
+				</div>
 				<ul>
 					{
 						posts.map((post) => (
@@ -109,3 +124,4 @@ const posts = (await getCollection('blog')).sort(
 		<Footer />
 	</body>
 </html>
+
