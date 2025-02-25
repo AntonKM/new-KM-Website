@@ -3,27 +3,6 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION} from '../consts';
-import { useEffect, useState } from "react";
-
-const BLUESKY_HANDLE = "dein.bsky.social";
-const API_URL = `https://bsky.social/xrpc/com.atproto.repo.listRecords?repo=keks-magazin.de&collection=app.bsky.feed.post&limit=1`;
-
-const fetchLatestPost = async () => {
-  try {
-    const res = await fetch(API_URL);
-    const data = await res.json();
-    return data.records[0]; // Letzter Post
-  } catch (error) {
-    console.error("Fehler beim Abrufen des Bluesky-Posts:", error);
-    return null;
-  }
-};
-
-const [post, setPost] = useState(null);
-
-useEffect(() => {
-  fetchLatestPost().then(setPost);
-}, []);
 ---
 
 <!doctype html>
@@ -66,18 +45,6 @@ useEffect(() => {
 					Umfrage zur Bundestagswahl 2025
 					</a>
 				</p>
-			<div class="rounded-box">
-				{post ? (
-				<article>
-					<p>{post.value.text}</p>
-					<a href={`https://bsky.app/profile/${BLUESKY_HANDLE}/post/${post.uri.split('/').pop()}`} target="_blank">
-					Zum Post
-					</a>
-				</article>
-				) : (
-				<p>Neuesten Beitrag laden...</p>
-				)}
-			</div>
 		</main>
 		<Footer />
 	</body>
