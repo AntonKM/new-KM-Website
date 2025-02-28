@@ -4,20 +4,6 @@ const today = new Date();
 
 <footer>
 	&copy; {today.getFullYear()} Keks Magazin Redaktion. Alle Rechte vorbehalten.
-	<div class="social-links">
-		<a href="https://bsky.app/profile/keks-magazin.de" target="_blank">
-			<span class="sr-only">Follow us on Bluesky</span>
-
-		</a>
-		<a href="Mailto:Kontakt@Keks-Magazin.de" target="_blank">
-			<span class="sr-only">Write us an E-Mail</span>
-			
-		</a>
-		<a href="https://youtube.com/keksmagazin" target="_blank">
-			<span class="sr-only">Follow us on YouTube</span>
-
-		</a>
-	</div>
 </footer>
 <style>
 	footer {
@@ -25,18 +11,5 @@ const today = new Date();
 		background: linear-gradient(var(--gray-gradient)) no-repeat;
 		color: rgb(var(--gray));
 		text-align: center;
-	}
-	.social-links {
-		display: flex;
-		justify-content: center;
-		gap: 1em;
-		margin-top: 1em;
-	}
-	.social-links a {
-		text-decoration: none;
-		color: rgb(var(--gray));
-	}
-	.social-links a:hover {
-		color: rgb(var(--gray-dark));
 	}
 </style>
