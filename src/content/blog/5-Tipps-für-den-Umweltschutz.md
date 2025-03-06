@@ -30,7 +30,7 @@ Nutze langlebige Stofftaschen, anstatt von Plastiktüten.  Etwa 5 Billionen St
 
 *Tipp Nummer 4:*
 
-Benutze einen Mehrwegbecher, statt Einwegbecher.  Jedes Jahr werden eine Billion Plastik/Papierbecher produziert. Die meisten landen auf Mülldeponien. Weniger als 1 Prozent werden recycelt. Durch die Nutzung von Mehrwegbechern, werden weniger Bäume abgeholzt, um Papier herzustellen.
+Benutze einen Mehrwegbecher, statt Einwegbecher.  Jedes Jahr werden eine Billion Plastik/Papierbecher produziert. Die meisten landen auf Mülldeponien. Weniger als 1 Prozent werden recycelt. Durch die Nutzung von Mehrwegbechern, werden weniger Bäume abgeholzt, um Papier herzustellen und es landet weniger Müll auf den Deponien.
 
 *Tipp Nummer 5:*
 
