@@ -6,7 +6,7 @@ heroImage: '/FebruaryBlogpost.png'
 tags: ["Politik"]
 ---
 
-Hier bekommt ihr am Ende des Monats eine Zusammenfassung der politischen Ereignisse. Habt noch etwas Geduld. 
+Hier bekommt ihr am Ende des Monats eine Zusammenfassung der politischen Ereignisse. Habt noch etwas Geduld. Danke
 
 
 
