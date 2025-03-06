@@ -26,7 +26,7 @@ P.S. Man kann sich einfach Mal auf Amazon umschauen, denn dort gibt es ein groß
 
 *Tipp Nummer 3:*
 
-Nutze langlebige Stofftaschen, anstatt von Plastiktüten.  Etwa 5 Billionen Stück – so viele Plastiktüten werden laut Umweltprogramm der Vereinten Nationen (UNEP)(https://www.unep.org/interactives/beat-plastic-pollution/) jährlich schätzungsweise weltweit verbraucht. (Quelle www.duh.de) Diese Plastiktüten sind ein sehr großes Problem, da diese oft nicht entsorgt, sondern einfach auf der Straße oder sogar im Meer landen, wo sie für Meereslebewesen zum Todesurteil werden. Meereslebewesen wie Schildkröten können sich sehr einfach in den Tüten verheddern und ersticken. Aber nicht nur Wassertieren können Plastiktüten zum Verhängnis werden, Möwen können Plastiktüten für Essen halten, verschlucken und ersticken. Man tut sich, den Tieren und der Umwelt etwas Gutes, wenn man keine Plastiktüten benutzt.
+Nutze langlebige Stofftaschen, anstatt von Plastiktüten.  Etwa 5 Billionen Stück – so viele Plastiktüten werden laut Umweltprogramm der Vereinten Nationen (UNEP)(https://www.unep.org/interactives/beat-plastic-pollution/) jährlich schätzungsweise weltweit verbraucht. Diese Plastiktüten sind ein sehr großes Problem, da diese oft nicht entsorgt, sondern einfach auf der Straße oder sogar im Meer landen, wo sie für Meereslebewesen zum Todesurteil werden. Meereslebewesen wie Schildkröten können sich sehr einfach in den Tüten verheddern und ersticken. Aber nicht nur Wassertieren können Plastiktüten zum Verhängnis werden, Möwen können Plastiktüten für Essen halten, verschlucken und ersticken. Man tut sich, den Tieren und der Umwelt etwas Gutes, wenn man keine Plastiktüten benutzt.
 
 *Tipp Nummer 4:*
 
