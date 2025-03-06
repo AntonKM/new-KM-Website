@@ -3,14 +3,14 @@ import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<'blog'>['data'] & { heroImage?: string };
 
 const { title, description } = Astro.props;
 ---
 
 <html lang="de">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead  title={title} description={description} />
 	</head>
 
 	<body>
