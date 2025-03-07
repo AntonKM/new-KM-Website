@@ -36,4 +36,4 @@ Benutze einen Mehrwegbecher, statt Einwegbecher.  Jedes Jahr werden eine Billi
 
 Verwende Taschentücher aus Stoff, anstatt welches aus Papier. Wenn du Stofftaschentücher kaufst, sparst du Papier und Geld. Millionen von Bäumen werden jeden Tag für die Zellstoffproduktion abgeholzt. Meistens stammt der Zellstoff für die Billionen Taschentücher oft aus Urwäldern. Außerdem gibt es viele ungesunde Chemikalien, die zum Bleichen der Papiertaschentücher verwendet werden.
 
-Es gibt sehr viele Sachen die man für die Umwelt tun kann. Danke das du mithilfst den Planeten zu schützen, unsere Erde dankt dir.
+Es gibt sehr viele Sachen die man für die Umwelt tun kann. Danke das du mithilfst unseren Planeten zu schützen.
