@@ -82,12 +82,40 @@ const posts = (await getCollection('blog')).sort(
 				ul li:first-child .title {
 					font-size: 1.563em;
 				}
+				.container {
+					
+				}
 			}
+			.container {
+				display: flex;
+				justify-content: center;
+				gap: 0.5rem;
+				margin: 1rem 0;
+			}
+			.container a {
+				color: rgb(var(--black));
+				text-decoration: none;
+				font-weight: 555;
+				border: 1px solid rgb(var(--black));
+				border-radius: 30px;
+				padding: 0.05rem 0.5rem;
+			}
+			.container a:hover {
+				background: rgb(var(--black));
+				color: white;
+			}
+
 		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
+			<div class="container">
+				<a href="#">Technologie</a>
+				<a href="#">Politik</a>
+				<a href="#">Interviews</a>
+				<a href="#">Lifestyle</a>
+			</div>
 			<section>
 				<ul>
 					{
