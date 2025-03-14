@@ -1,6 +1,6 @@
 ---
 title: '5 Tipps für den Umweltschutz'
-description: '...'
+description: 'In diesem Artikel lernt ihr 5 spannende Tipps und Tricks um unsere Umwelt zu schützen.'
 pubDate: 'Mar 06 2025'
 heroImage: '/placeholder.png'
 tags: ["Lifestyle"]
