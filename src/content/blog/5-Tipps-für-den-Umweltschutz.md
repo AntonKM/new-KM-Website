@@ -1,9 +1,12 @@
 ---
-title: '5 Tipps für den Umweltschutz'
-description: 'In diesem Artikel lernt ihr 5 spannende Tipps und Tricks um unsere Umwelt zu schützen.'
-pubDate: 'Mar 06 2025'
-heroImage: '/placeholder.png'
-tags: ["Lifestyle"]
+description: >-
+  In diesem Artikel lernt ihr 5 spannende Tipps und Tricks um unsere Umwelt zu
+  schützen.
+pubDate: Mar 06 2025
+title: 5 Tipps für den Umweltschutz
+tags:
+  - Lifestyle
+heroImage: /aboutus.png
 ---
 
 *Tipp Nummer 1:*
@@ -20,13 +23,13 @@ P.S. Feste Shampoos und Seifen gibt es in jedem Drogeriemarkt.
 
 *Tipp Nummer 3:*
 
-Benutze Zahnpastatabletten oder Zahnpasta im Glas, da diese weniger Verpackungsmüll produzieren, als Zahnpasta in Tuben. Studien zeigen, dass hierzulande jährlich rund 413 Millionen Tuben Zahnpasta gekauft werden. (Quelle www.bund.net) Zahnpastatuben müssen produziert und am Ende entsorgt werden. Für die Produktion braucht man eine große Menge an Rohstoffen, die, wie gesagt entsorgt werden und später sogar manchmal im Meer landen.
+Benutze Zahnpastatabletten oder Zahnpasta im Glas, da diese weniger Verpackungsmüll produzieren, als Zahnpasta in Tuben. Studien zeigen, dass hierzulande jährlich rund 413 Millionen Tuben Zahnpasta gekauft werden. (Quelle [www.bund.net](http://www.bund.net)) Zahnpastatuben müssen produziert und am Ende entsorgt werden. Für die Produktion braucht man eine große Menge an Rohstoffen, die, wie gesagt entsorgt werden und später sogar manchmal im Meer landen.
 
 P.S. Man kann sich einfach Mal auf Amazon umschauen, denn dort gibt es ein großes Sortiment an umweltfreundlichen Alternativen zu Zahnpasta in Tuben. Auch manche Drogeriemärkte bieten neuerdings umweltfreundliche Zahnpasta in ihrem Sortiment an.
 
 *Tipp Nummer 3:*
 
-Nutze langlebige Stofftaschen, anstatt von Plastiktüten.  Etwa 5 Billionen Stück – so viele Plastiktüten werden laut Umweltprogramm der Vereinten Nationen (UNEP)(https://www.unep.org/interactives/beat-plastic-pollution/) jährlich schätzungsweise weltweit verbraucht. Diese Plastiktüten sind ein sehr großes Problem, da diese oft nicht entsorgt, sondern einfach auf der Straße oder sogar im Meer landen, wo sie für Meereslebewesen zum Todesurteil werden. Meereslebewesen wie Schildkröten können sich sehr einfach in den Tüten verheddern und ersticken. Aber nicht nur Wassertieren können Plastiktüten zum Verhängnis werden, Möwen können Plastiktüten für Essen halten, verschlucken und ersticken. Man tut sich, den Tieren und der Umwelt etwas Gutes, wenn man keine Plastiktüten benutzt.
+Nutze langlebige Stofftaschen, anstatt von Plastiktüten.  Etwa 5 Billionen Stück – so viele Plastiktüten werden laut Umweltprogramm der Vereinten Nationen (UNEP)([https://www.unep.org/interactives/beat-plastic-pollution/](https://www.unep.org/interactives/beat-plastic-pollution/)) jährlich schätzungsweise weltweit verbraucht. Diese Plastiktüten sind ein sehr großes Problem, da diese oft nicht entsorgt, sondern einfach auf der Straße oder sogar im Meer landen, wo sie für Meereslebewesen zum Todesurteil werden. Meereslebewesen wie Schildkröten können sich sehr einfach in den Tüten verheddern und ersticken. Aber nicht nur Wassertieren können Plastiktüten zum Verhängnis werden, Möwen können Plastiktüten für Essen halten, verschlucken und ersticken. Man tut sich, den Tieren und der Umwelt etwas Gutes, wenn man keine Plastiktüten benutzt.
 
 *Tipp Nummer 4:*
 
