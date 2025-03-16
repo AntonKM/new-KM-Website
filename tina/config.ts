@@ -49,6 +49,12 @@ export default defineConfig({
             type: 'string',
             list: true,
           },
+          {
+            label: 'Hero Image',
+            name: 'heroImage',
+            type: 'image',
+            description: 'Wählen Sie ein Bild aus dem Public-Ordner',
+          },
         ],
       },
     ],
