@@ -43,6 +43,12 @@ export default defineConfig({
             label: "Body",
             isBody: true,
           },
+          {
+            label: 'Tags',
+            name: 'tags',
+            type: 'string',
+            list: true,
+          },
         ],
       },
     ],
