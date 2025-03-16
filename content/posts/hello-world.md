@@ -1,5 +1,5 @@
 ---
-title: Hello, World!
+title: 'Hello, World! Welcome to the first blogpost'
 ---
 
 ## Hello World!
