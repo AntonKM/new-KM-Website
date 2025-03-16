@@ -1,0 +1,53 @@
+---
+import { defineCollection, z } from 'astro:content'
+
+const blog = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    pubDate: z.coerce.date(),
+    tags: z.array(z.string()),
+    updatedDate: z.coerce.date().optional(),
+    heroImage: z.string().optional()
+  })
+})
+export function extractTags(post: CollectionEntry<'blog'>): string[] {
+  return post.data.tags.map((tag) => tag.toLowerCase())
+}
+
+export function getTagsByCount(posts: CollectionEntry<'blog'>[]): [string, number][] {
+  const tagsCountMap = posts
+    .map(extractTags)
+    .flat()
+    .reduce(
+      (acc, tag) => acc.set(tag, (acc.get(tag) ?? 0) + 1),
+      new Map<string, number>()
+    )
+
+  return Array.from(tagsCountMap.entries()).sort(
+    ([name1, count1], [name2, count2]) =>
+      count1 === count2
+        ? name1 > name2 ? 1 : -1
+        : count2 > count1 ? 1 : -1
+  )
+}
+export async function getStaticPaths({
+  paginate
+}): Promise<Page<CollectionEntry<'blog'>>> {
+  const posts = await getCollection('blog')
+  const sortedPosts = posts.sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  )
+  return paginate(sortedPosts, {
+    pageSize: PAGINATION_SIZE,
+    props: {
+      tags: getTagsByCount(sortedPosts)
+    }
+  })
+}
+---
+<div
+  class="flex justify-center items-start flex-wrap odd:items-end min-w-fit mx-4 mb-4 [&>span]:mb-1"
+>
+  {tags.map(([tag, count]) => <Tag selected name={tag} count={count} />)}
+</div>

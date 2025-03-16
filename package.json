@@ -14,7 +14,7 @@
     "sass-embedded": "^1.85.1"
   },
   "scripts": {
-    "dev": "astro build && npm run postbuild && astro dev",
+    "dev": "tinacms dev -c \"astro dev\"",
     "postbuild": "pagefind --site dist/"
   }
 }
