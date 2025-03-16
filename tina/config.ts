@@ -1,16 +1,10 @@
 import { defineConfig } from "tinacms";
 
-// Your hosting provider likely exposes this as an environment variable
-const branch =
-  process.env.NEXT_PUBLIC_TINA_BRANCH ||
-  process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF ||
-  process.env.HEAD ||
-  "main";
 
 export default defineConfig({
-  token:  "6fb00fe0c5f24f316e1c9c9c5613bd415a943987", // This should match the value in your .env file
-  clientId: "6e185f26-b9f6-4659-bd6d-61c230269fad",
-  branch,
+  branch: "",
+  clientId: "",
+  token: "",
 
 
   build: {
