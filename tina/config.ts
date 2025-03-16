@@ -8,9 +8,10 @@ const branch =
   "main";
 
 export default defineConfig({
-  branch: "main",
-  clientId: "6e185f26-b9f6-4659-bd6d-61c230269fad",
-  token: "6fb00fe0c5f24f316e1c9c9c5613bd415a943987",
+  clientId: process.env["6e185f26-b9f6-4659-bd6d-61c230269fad"],
+  token: process.env["6fb00fe0c5f24f316e1c9c9c5613bd415a943987"],
+  branch,
+
 
   build: {
     outputFolder: "admin",
@@ -43,18 +44,12 @@ export default defineConfig({
             label: "Body",
             isBody: true,
           },
-          {
-            label: 'Tags',
-            name: 'tags',
-            type: 'string',
-            list: true,
-          },
-          {
-            label: 'Hero Image',
-            name: 'heroImage',
-            type: 'image',
-            description: 'Wählen Sie ein Bild aus dem Public-Ordner',
-          },
+            {
+    label: 'Tags',
+    name: 'tags',
+    type: 'string',
+    list: true,
+  },
         ],
       },
     ],
