@@ -3,10 +3,9 @@ import { defineConfig } from "tinacms";
 
 export default defineConfig({
   branch: "",
-  clientId: "",
-  token: "",
-
-
+  token:  process.env.TINA_TOKEN, // This should match the value in your .env file
+  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID, // This should match the value in your .env file
+  
   build: {
     outputFolder: "admin",
     publicFolder: "public",
@@ -39,11 +38,23 @@ export default defineConfig({
             isBody: true,
           },
             {
-    label: 'Tags',
-    name: 'tags',
-    type: 'string',
-    list: true,
-  },
+            label: 'Tags',
+            name: 'tags',
+            type: 'string',
+            list: true,
+          },
+          {
+            type: "image",
+            name: "Hero Image",
+            label: "Hero Image",
+            required: true,
+          },
+          {
+            type: "datetime",
+            name: "date",
+            label: "Date",
+            required: true,
+          },
         ],
       },
     ],
