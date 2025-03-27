@@ -1,5 +1,11 @@
 ---
-title: Hello, World!
+description:
+  In diesem Artikel lernt ihr 5 spannende Tipps und Tricks um unsere Umwelt zu
+  schützen.
+pubDate: Mar 06 2025
+title: 5 Tipps für den Umweltschutz
+tags: ["lifestyle"]
+heroImage: /placeholder.png
 ---
 
 ## Hello World!
