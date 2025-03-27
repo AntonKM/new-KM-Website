@@ -1,11 +1,12 @@
 ---
-description:
+pubDate: Mar 06 2025
+heroImage: /placeholder.png
+title: 5 Tipps für den Umweltschutz
+tags:
+  - lifestyle
+description: >
   In diesem Artikel lernt ihr 5 spannende Tipps und Tricks um unsere Umwelt zu
   schützen.
-pubDate: Mar 06 2025
-title: 5 Tipps für den Umweltschutz
-tags: ["lifestyle"]
-heroImage: /placeholder.png
 ---
 
 *Tipp Nummer 1:*
