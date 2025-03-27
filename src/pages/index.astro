@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
+import TagMap from '../components/TagMap.astro';
 
 const posts = (await getCollection('blog')).sort(
 	(a,b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -92,7 +93,16 @@ const posts = (await getCollection('blog')).sort(
 					margin-bottom: 0;
 				}
 				ul li:first-child .title {
-					font-size: 1.563em;
+					font-size: 1.0em;
+				}
+				ul li .title {
+					font-size: 1.0em;
+				}
+				ul li .description {
+					font-size: 0.8em;
+				}
+				ul li .date {
+					font-size: 0.8em;
 				}
 			}
 
@@ -101,6 +111,7 @@ const posts = (await getCollection('blog')).sort(
 	<body>
 		<Header />
 		<main>
+			<TagMap />
 			<section>
 				<ul>
 					{
