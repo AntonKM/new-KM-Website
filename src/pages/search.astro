@@ -2,7 +2,11 @@
 import SearchComponent from "astro-pagefind/components/Search";
 import RootLayout from "../layouts/RootLayout.astro";
 ---
-<RootLayout>
+<RootLayout 
+    title="Search Page" 
+    description="Search through the website content" 
+    tags={["search", "website"]} 
+    pubDate={new Date()}>
     <h2 style="text-align: center; margin-bottom: 2rem">Suche</h2>
-    <SearchComponent id="search" className="pagefind-ui" uiOptions={{ showImages: false}} />
+    <SearchComponent id="search" className="pagefind-ui" uiOptions={{ showImages: true}} />
 </RootLayout>
