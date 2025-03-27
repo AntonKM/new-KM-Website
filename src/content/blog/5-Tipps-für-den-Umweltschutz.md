@@ -1,7 +1,7 @@
 ---
 pubDate: Mar 06 2025
 heroImage: /placeholder.png
-title: 5 Tipps für den Umweltschutz.
+title: 5 Tipps für den Umweltschutz
 tags:
   - lifestyle
 description: >

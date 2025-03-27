@@ -13,7 +13,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "@tinacms build && astro build",
     "postbuild": "pagefind --site dist/"
   },
   "devDependencies": {
