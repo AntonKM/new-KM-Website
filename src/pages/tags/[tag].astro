@@ -5,6 +5,7 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import FormattedDate from '../../components/FormattedDate.astro';
+import BackButton from '../../components/BackButton.astro';
 
 export async function getStaticPaths() {
     const allPosts = await getCollection('blog');
@@ -91,6 +92,9 @@ const filteredPosts = allPosts.filter(post => post.data.tags?.includes(tag));
 			ul li a:hover .date {
 				color: rgb(var(--accent));
 			}
+            h3 {
+                margin-top: 20px;
+            }
 			@media (max-width: 720px) {
 				ul {
 					gap: 0.5em;
@@ -114,6 +118,9 @@ const filteredPosts = allPosts.filter(post => post.data.tags?.includes(tag));
 				ul li .date {
 					font-size: 0.8em;
 				}
+                a {
+                    text-decoration: none;
+                }
 			}
 
 		</style>
@@ -122,6 +129,7 @@ const filteredPosts = allPosts.filter(post => post.data.tags?.includes(tag));
 		<Header />
 		<main>
 			<section>
+                <BackButton href="/" />
                 <h3>Posts tagged with "{tag}"</h3>
 
                 {filteredPosts.length > 0 ? (
