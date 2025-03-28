@@ -61,6 +61,11 @@ export default defineConfig({
             type: "image",
             name: "heroImage",
             label: "Hero Image",
+          },
+          {
+            type: "datetime",
+            name: "pubDate",
+            label: "pubDate",
           }
         ],
       },

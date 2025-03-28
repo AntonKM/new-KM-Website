@@ -1,12 +1,12 @@
 ---
-pubDate: Mar 28 2025
-heroImage: /placeholder.png
 title: Keks Magazin Fotowettbewerb 25
 tags:
-- all
-description: 
+  - all
+description: >
   Mach mit bei unserem diesjährigen Fotowettbewerb! Hier findest du alle Infos
   dazu
+heroImage: /placeholder.png
+pubDate: 2025-03-27T23:00:00.000Z
 ---
 
 ##### Dieses Jahr findet der erste Keks Magazin Fotowettbewerb statt!
@@ -24,8 +24,6 @@ Unser diesjähriges Motto: Schöne Orte in Ulm, Neu-Ulm und Umgebung
 
 ##### **Einsendung:**
 
-Du schickst uns dein Foto bis zum oben genannten Einsendeschluss mit deinem Vornamen, dem Namen der Stadt/des Ortes/des Dorfes wo das Bild aufgenommen wurde und einer kurzen Bildbeschreibung in 1-2 Sätzen an *Kontakt/@Keks-Magazin.de*
+Du schickst uns dein Foto bis zum oben genannten Einsendeschluss mit deinem Vornamen, dem Namen der Stadt/des Ortes/des Dorfes wo das Bild aufgenommen wurde und einer kurzen Bildbeschreibung in 1-2 Sätzen an *[Kontakt@Keks-Magazin.de](mailto:Kontakt@Keks-Magazin.de)*
 
-> Wir freuen uns auf jeden Teilnehmer! 
-
-> Eure Keks Magazin Redaktion
+> Wir freuen uns auf jeden Teilnehmer!Eure Keks Magazin Redaktion
