@@ -7,7 +7,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, author} = Astro.props;
 ---
 
 <html lang="de">
@@ -20,12 +20,14 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				margin: 0;
 			}
 			.hero-image {
-				width: 100%;
+				width: 80%;
+				max-width: 100%;
+				margin: 0 auto;
 			}
 			.hero-image img {
 				display: block;
 				margin: 0 auto;
-				border-radius: 10px;
+				border-radius: 18px;
 			}
 			.prose {
 				width: 720px;
@@ -39,15 +41,29 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				padding: 1em 0;
 				text-align: center;
 				line-height: 1;
+				font-size: 0.9em;
 			}
 			.title h1 {
-				margin: 0 0 0.5em 0;
+				margin: 0 0 0.5em 0; 
+				white-space: normal; 
+				overflow: visible; 
+				text-overflow: clip; 
+				font-size: clamp(1.5em, 4vw, 2.5em);
 			}
 			.date {
 				margin-bottom: 0.5em;
 				color: rgb(var(--gray));
 			}
 			.last-updated-on {
+				font-style: italic;
+			}
+			.description {
+				margin: 0.5em 0;
+				font-size: 1.2em;
+			}
+			.author {
+				margin: 0.5em 0;
+				font-size: 1.0em;
 				font-style: italic;
 			}
 		</style>
@@ -73,6 +89,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 							}
 						</div>
 						<h1>{title}</h1>
+						<p>{description}</p>
+						<p class="author">Von {author}</p>
 						<hr />
 					</div>
 					<slot />
