@@ -1,12 +1,11 @@
 ---
+pubDate: Apr 04 2025
+heroImage: /placeholder.png
 title: Keks Magazin Fotowettbewerb 25
 tags:
   - all
-description: >
-  Mach mit bei unserem diesjährigen Fotowettbewerb! Hier findest du alle Infos
-  dazu
-heroImage: /placeholder.png
-pubDate: Apr 04 2025
+description: |
+  Mach mit bei unserem diesjährigen Fotowettbewerb! Hier findest du alle Infos dazu
 author: Keks Magazin
 ---
 
