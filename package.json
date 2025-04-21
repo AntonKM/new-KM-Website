@@ -8,12 +8,11 @@
     "@astrojs/sitemap": "^3.3.0",
     "astro": "^5.7.4",
     "astro-pagefind": "^1.8.1",
-    "pagefind": "^1.3.0",
-    "tinacms": "^2.7.3"
+    "pagefind": "^1.3.0"
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "tinacms build && astro build",
+    "build": "astro build",
     "postbuild": "pagefind --site dist/"
   },
   "devDependencies": {
