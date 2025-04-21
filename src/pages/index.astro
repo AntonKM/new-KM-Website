@@ -19,26 +19,29 @@ const posts = (await getCollection('blog')).sort(
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
 			main {
-				width: 800px;
+				max-width: 800px;
 			}
 			ul {
 				display: flex;
 				flex-wrap: wrap;
-				gap: 1rem;
+				gap: 2rem;
 				list-style-type: none;
+				margin: 0;
+				padding: 0;
 				font-family: 'Times New Roman', Times, serif;
 			}
 			ul li{
 				gap: 2rem;
-				border: 1px solid ;
-				border-color: rgb(5, 255, 167);
-				border-radius: 18px;
-				margin: 1rem 0;
+				margin: 1px 1px 1px 1px;
 				padding: 1rem;
 				text-align: center;
 			}
 			ul li:hover {
-				box-shadow: 0 0 10px rgb(5, 213, 140);
+				box-shadow: 0 0 10px rgb(5, 255, 167);
+				border: 1px solid;
+				margin: 0px 0px 0px 0px;
+				border-color: rgb(5, 255, 167);
+				border-radius: 18px;
 			}
 			ul li * {
 				text-decoration: none;
@@ -46,11 +49,10 @@ const posts = (await getCollection('blog')).sort(
 			}
 			ul li:first-child {
 				width: 100%;
-				margin-bottom: 1rem;
 				text-align: center;
 			}
 			ul li:nth-child(n+2) {
-				width: calc(50% - 0.5rem);
+				width: calc(50% - 1rem);
 			}
 			ul li:first-child img {
 				width: 100%;
@@ -72,17 +74,13 @@ const posts = (await getCollection('blog')).sort(
 			}
 			.date {
 				margin-top: 0.1rem;
-				color: rgb(var(--gray));
+				color: rgb(black);
 			}
 			.description {
 				margin-bottom: 1rem;
 				margin-top: 1rem;
 				color: black;
 				font-size: 1.125rem;
-			}
-			ul li a:hover h4,
-			ul li a:hover .date {
-				color: rgb(var(--accent));
 			}
 			@media (max-width: 720px) {
 				ul li:first-child,
@@ -110,7 +108,6 @@ const posts = (await getCollection('blog')).sort(
 					font-size: 0.8em;
 				}
 			}
-
 		</style>
 	</head>
 	<body>

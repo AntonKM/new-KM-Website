@@ -43,3 +43,5 @@ Verwende Taschentücher aus Stoff, anstatt welches aus Papier. Wenn du Stofftasc
 
 Es gibt sehr viele Sachen die man für die Umwelt tun kann. Danke das du mithilfst unseren Planeten zu schützen.
 
+
+

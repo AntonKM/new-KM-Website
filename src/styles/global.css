@@ -1,5 +1,4 @@
 
-
 :root {
 	--accent: #000000;
 	--accent-dark: #08ba76;
@@ -21,7 +20,6 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--gray-dark));
-	font-size: 20px;
 	line-height: 1.7;
 }
 main {
@@ -99,7 +97,7 @@ pre > code {
 	all: unset;
 }
 blockquote {
-	border-left: 4px solid var(--accent);
+	border-left: 3px solid rgb(5, 255, 167);
 	padding: 0 0 0 20px;
 	margin: 0px;
 	font-size: 1.333em;
@@ -107,6 +105,8 @@ blockquote {
 hr {
 	border: none;
 	border-top: 1px solid rgb(var(--gray-light));
+	margin-left: 2px;
+	margin-right: 20px;
 }
 @media (max-width: 720px) {
 	body {
@@ -115,23 +115,5 @@ hr {
 	main {
 		padding: 1em;
 	}
-}
-main button {
-    background-color: #000000;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 50px;
-    cursor: pointer;
 }
 
