@@ -20,7 +20,7 @@ const { title, description, pubDate, updatedDate, heroImage, author} = Astro.pro
 				margin: 0;
 			}
 			.hero-image {
-				width: 80%;
+				width: 100%;
 				max-width: 100%;
 				margin: 0 auto;
 			}
@@ -42,6 +42,7 @@ const { title, description, pubDate, updatedDate, heroImage, author} = Astro.pro
 				text-align: center;
 				line-height: 1;
 				font-size: 0.9em;
+				text-align: left;
 			}
 			.title h1 {
 				margin: 0 0 0.5em 0; 
@@ -51,8 +52,10 @@ const { title, description, pubDate, updatedDate, heroImage, author} = Astro.pro
 				font-size: clamp(1.5em, 4vw, 2.5em);
 			}
 			.date {
-				margin-bottom: 0.5em;
+				margin-bottom: 1em;
+				margin-top: 1.5em;
 				color: rgb(var(--gray));
+				font-size: 0.9em;
 			}
 			.last-updated-on {
 				font-style: italic;
@@ -78,6 +81,9 @@ const { title, description, pubDate, updatedDate, heroImage, author} = Astro.pro
 				</div>
 				<div class="prose">
 					<div class="title">
+						<h1>{title}</h1>
+						<p>{description}</p>
+						<p class="author">Von {author}</p>
 						<div class="date">
 							<FormattedDate date={pubDate} />
 							{
@@ -88,9 +94,6 @@ const { title, description, pubDate, updatedDate, heroImage, author} = Astro.pro
 								)
 							}
 						</div>
-						<h1>{title}</h1>
-						<p>{description}</p>
-						<p class="author">Von {author}</p>
 						<hr />
 					</div>
 					<slot />

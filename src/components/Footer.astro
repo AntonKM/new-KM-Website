@@ -4,12 +4,22 @@ const today = new Date();
 
 <footer>
 	&copy; {today.getFullYear()} Keks Magazin Redaktion. Alle Rechte vorbehalten.
-</footer>
+	<br />
+	<a href="/impressum">Impressum</a>
+	<a href="/datenschutz">Datenschutz</a>
+	</footer>
 <style>
 	footer {
 		padding: 2em 1em 6em 1em;
 		background: linear-gradient(var(--gray-gradient)) no-repeat;
 		color: rgb(var(--gray));
 		text-align: center;
+	}
+	a {
+		color: rgb(var(--gray));
+		text-decoration: none;
+	}
+	a:hover {
+		color: rgb(8, 243, 169);
 	}
 </style>

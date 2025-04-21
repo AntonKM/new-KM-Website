@@ -1,17 +1,15 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import BaseHead from "../components/BaseHead.astro";
 import "../styles/global.css";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 const { pageTitle } = Astro.props;
 ---
-
-<html lang="en">
+<!doctype html>
+<html lang="de">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />  
     <style>
       body {
         font-family: 'Times New Roman', Times, serif;
