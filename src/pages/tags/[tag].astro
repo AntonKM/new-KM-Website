@@ -39,12 +39,11 @@ const filteredPosts = allPosts.filter(post => post.data.tags?.includes(tag));
 				display: flex;
 				flex-wrap: wrap;
 				gap: 2rem;
-				list-style-type: none;
 				border: 1px solid ;
 				border-color: rgb(5, 255, 167);
-				border-radius: 10px;
 				margin: 1rem 0;
 				padding: 1rem;
+				border-radius: 18px;
 			}
 			ul li:hover {
 				box-shadow: 0 0 10px rgb(5, 213, 140);
@@ -118,9 +117,6 @@ const filteredPosts = allPosts.filter(post => post.data.tags?.includes(tag));
 				ul li .date {
 					font-size: 0.8em;
 				}
-                a {
-                    text-decoration: none;
-                }
 			}
 
 		</style>
@@ -130,7 +126,7 @@ const filteredPosts = allPosts.filter(post => post.data.tags?.includes(tag));
 		<main>
 			<section>
                 <BackButton href="/" />
-                <h3>Posts tagged with "{tag}"</h3>
+                <h3>Artikel zum Thema {tag}</h3>
 
                 {filteredPosts.length > 0 ? (
                     <ul>

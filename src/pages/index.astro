@@ -26,6 +26,7 @@ const posts = (await getCollection('blog')).sort(
 				flex-wrap: wrap;
 				gap: 1rem;
 				list-style-type: none;
+				font-family: 'Times New Roman', Times, serif;
 			}
 			ul li{
 				gap: 2rem;
@@ -34,7 +35,6 @@ const posts = (await getCollection('blog')).sort(
 				border-radius: 18px;
 				margin: 1rem 0;
 				padding: 1rem;
-				display: flex;
 				text-align: center;
 			}
 			ul li:hover {
@@ -71,16 +71,14 @@ const posts = (await getCollection('blog')).sort(
 				line-height: 1;
 			}
 			.date {
-				margin: 0;
+				margin-top: 0.1rem;
 				color: rgb(var(--gray));
 			}
 			.description {
-				margin: 0;
 				margin-bottom: 1rem;
 				margin-top: 1rem;
 				color: black;
 				font-size: 1.125rem;
-				font-family: 'Times New Roman', Times, serif;
 			}
 			ul li a:hover h4,
 			ul li a:hover .date {
@@ -107,9 +105,7 @@ const posts = (await getCollection('blog')).sort(
 				ul li .title {
 					font-size: 1.0em;
 				}
-				ul li .description {
-					font-size: 0.8em;
-				}
+				ul li .description,
 				ul li .date {
 					font-size: 0.8em;
 				}

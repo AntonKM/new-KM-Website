@@ -4,7 +4,7 @@ updatedDate: Apr 21 2025
 heroImage: /placeholder.png
 title: 5 Tipps für den Umweltschutz
 tags:
-  - lifestyle
+  - Lifestyle
 description: 
   In diesem Artikel lernt ihr 5 spannende Tipps und Tricks um unsere Umwelt zu
   schützen.
