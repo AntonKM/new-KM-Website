@@ -22,7 +22,7 @@ const filteredPosts = allPosts.filter(post => post.data.tags?.includes(tag));
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
-						main {
+			main {
 				max-width: 800px;
 			}
 			ul {
@@ -49,20 +49,6 @@ const filteredPosts = allPosts.filter(post => post.data.tags?.includes(tag));
 			ul li * {
 				text-decoration: none;
 				transition: 0.2s ease;
-			}
-			ul li:first-child {
-				width: 100%;
-				margin-bottom: 1rem;
-				text-align: center;
-			}
-			ul li:nth-child(n+2) {
-				width: calc(50% - 1rem);
-			}
-			ul li:first-child img {
-				width: 100%;
-			}
-			ul li:first-child .title {
-				font-size: 2.369rem;
 			}
 			ul li img {
 				margin-bottom: 0.5rem;
@@ -102,12 +88,6 @@ const filteredPosts = allPosts.filter(post => post.data.tags?.includes(tag));
 					width: 100%;
 					margin: 0 auto;
 				}
-				ul li:first-child {
-					margin-bottom: 0;
-				}
-				ul li:first-child .title {
-					font-size: 1.0em;
-				}
 				ul li .title {
 					font-size: 1.0em;
 				}
@@ -116,12 +96,6 @@ const filteredPosts = allPosts.filter(post => post.data.tags?.includes(tag));
 					font-size: 0.8em;
 				}
 			}
-			h4 {
-				margin-left: 2.0em;
-				margin-top: 1.0em;
-				color: rgb(var(--black));
-				font-size: 2.0;
-			}
 		</style>
 	</head>
 	<body>
@@ -129,7 +103,7 @@ const filteredPosts = allPosts.filter(post => post.data.tags?.includes(tag));
 		<main>
 			<section>
 				<TagMap />
-                <h4>{tag}</h4>
+                <h4>{tag}🏷️</h4>
 				<hr />
                 {filteredPosts.length > 0 ? (
                     <ul>

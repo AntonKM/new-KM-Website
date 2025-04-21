@@ -193,6 +193,7 @@
   },
   "active": "6cf259e0635a9b53",
   "lastOpenFiles": [
+    "src/pages/404.astro",
     "src/pages/404",
     "dist/_astro/Search.astro_astro_type_script_index_0_lang.mBpmxV9R.js",
     "dist/_astro/_slug_.cO6twjqq.css",
@@ -203,7 +204,6 @@
     "dist/tags/lifestyle/index.html",
     "dist/tags/all/index.html",
     "dist/tags/lifestyle",
-    "dist/tags/all",
     "node_modules/@tinacms/mdx/node_modules/remark-gfm/node_modules/mdast-util-gfm/readme.md",
     "node_modules/@tinacms/mdx/node_modules/remark-gfm/node_modules/micromark-extension-gfm/readme.md",
     "node_modules/@tinacms/cli/node_modules/vite/node_modules/esbuild/README.md",
