@@ -16,7 +16,6 @@
     "postbuild": "pagefind --site dist/"
   },
   "devDependencies": {
-    "@tinacms/cli": "^1.9.3",
     "@types/node": "^22.13.14"
   }
 }
