@@ -10,10 +10,13 @@ import TagMap from '../components/TagMap.astro';
 const posts = (await getCollection('blog')).sort(
 	(a,b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
-// Removed duplicate export default block to resolve the error
+
 const pagination = {
-  pageSize: 3, // Maximale Anzahl an Posts pro Seite
+  pageSize: 21,
 };
+
+
+
 ---
 <!doctype html>
 <html lang="de">
@@ -92,11 +95,9 @@ const pagination = {
 				}
 			}
 			.tags_reading {
-				color: rgb(0, 0, 0);
-				font-family: sans-serif;
+				color: rgb(114, 114, 114);
 			}
 		</style>
-	</head>
 	<body>
 		<Header />
 		<main>
@@ -121,7 +122,6 @@ const pagination = {
 						</li>
 					))}
 				</ul>
-			</section>
 		</main>
 		<Footer />
 	</body>

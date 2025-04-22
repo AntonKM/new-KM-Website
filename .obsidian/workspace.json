@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/blog/5-Tipps-für-den-Umweltschutz.md",
+                "file": "src/content/blog/Keks-Magazin-Fotowettbewerb-25.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5-Tipps-für-den-Umweltschutz"
+              "title": "Keks-Magazin-Fotowettbewerb-25"
             }
           }
         ]
@@ -193,6 +193,16 @@
   },
   "active": "6cf259e0635a9b53",
   "lastOpenFiles": [
+    "src/content/blog/5-Tipps-für-den-Umweltschutz copy 6.md",
+    "src/content/blog/5-Tipps-für-den-Umweltschutz copy 5.md",
+    "src/content/blog/5-Tipps-für-den-Umweltschutz copy 4.md",
+    "src/content/blog/5-Tipps-für-den-Umweltschutz copy 3.md",
+    "src/content/blog/5-Tipps-für-den-Umweltschutz copy 2.md",
+    "src/content/blog/5-Tipps-für-den-Umweltschutz copy.md",
+    "src/pages/index.astro",
+    "src/pages/[...page].astro",
+    "src/components/Pagination.astro",
+    "src/content/blog/5-Tipps-für-den-Umweltschutz.md",
     "src/content/blog/bla.md",
     "src/pages/404.astro",
     "src/pages/404",
@@ -201,9 +211,6 @@
     "dist/_astro/search.CXOjeUv_.css",
     "dist/_astro",
     "dist/umfragen/index.html",
-    "dist/umfragen",
-    "dist/tags/lifestyle/index.html",
-    "dist/tags/all/index.html",
     "node_modules/@tinacms/mdx/node_modules/remark-gfm/node_modules/mdast-util-gfm/readme.md",
     "node_modules/@tinacms/mdx/node_modules/remark-gfm/node_modules/micromark-extension-gfm/readme.md",
     "node_modules/@tinacms/cli/node_modules/vite/node_modules/esbuild/README.md",
@@ -230,13 +237,6 @@
     "node_modules/@udecode/plate/node_modules/@udecode/plate-table/README.md",
     "node_modules/@tinacms/mdx/node_modules/@types/unist/README.md",
     "node_modules/@tinacms/mdx/node_modules/@types/mdast/README.md",
-    "node_modules/@tinacms/mdx/node_modules/@types/hast/README.md",
-    "node_modules/@tinacms/cli/node_modules/@vitejs/plugin-react/README.md",
-    "node_modules/@tinacms/cli/node_modules/@graphql-inspector/core/README.md",
-    "node_modules/@tinacms/cli/node_modules/@esbuild/win32-x64/README.md",
-    "node_modules/@graphiql/react/node_modules/@headlessui/react/README.md",
-    "node_modules/@astrojs/markdown-remark/node_modules/@shikijs/types/README.md",
-    "node_modules/@astrojs/markdown-remark/node_modules/@shikijs/themes/README.md",
     "node_modules/altair-static/build/dist/iframe-sandbox/vite.svg",
     "node_modules/@graphiql/react/src/icons/type.svg"
   ]
