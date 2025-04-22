@@ -10,7 +10,10 @@ import TagMap from '../components/TagMap.astro';
 const posts = (await getCollection('blog')).sort(
 	(a,b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
-
+// Removed duplicate export default block to resolve the error
+const pagination = {
+  pageSize: 3, // Maximale Anzahl an Posts pro Seite
+};
 ---
 <!doctype html>
 <html lang="de">
@@ -19,7 +22,7 @@ const posts = (await getCollection('blog')).sort(
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
 			main {
-				max-width: 800px;
+				width: 960px;
 			}
 			ul {
 				display: flex;
@@ -28,31 +31,24 @@ const posts = (await getCollection('blog')).sort(
 				list-style-type: none;
 				margin: 0;
 				padding: 0;
-				font-family: 'Times New Roman', Times, serif;
 			}
-			ul li{
-				gap: 2rem;
-				margin: 1px 1px 1px 1px;
+			ul li {
+				width: calc(50% - 3rem);
 				padding: 1rem;
-				text-align: center;
-			}
-			ul li:hover {
-				box-shadow: 0 0 10px rgb(5, 255, 167);
-				border: 1px solid;
-				margin: 0px 0px 0px 0px;
-				border-color: rgb(5, 255, 167);
-				border-radius: 18px;
+				border-radius: 15px;
 			}
 			ul li * {
 				text-decoration: none;
 				transition: 0.2s ease;
 			}
+			ul li:hover {
+				box-shadow: 4.5px 4.5px 9px rgb(5, 255, 167);
+				background-color: rgb(var(--white));
+			}
 			ul li:first-child {
 				width: 100%;
+				margin-bottom: 1rem;
 				text-align: center;
-			}
-			ul li:nth-child(n+2) {
-				width: calc(50% - 1rem);
 			}
 			ul li:first-child img {
 				width: 100%;
@@ -62,7 +58,7 @@ const posts = (await getCollection('blog')).sort(
 			}
 			ul li img {
 				margin-bottom: 0.5rem;
-				border-radius: 18px;
+				border-radius: 15px;
 			}
 			ul li a {
 				display: block;
@@ -73,40 +69,31 @@ const posts = (await getCollection('blog')).sort(
 				line-height: 1;
 			}
 			.date {
-				margin-top: 0.1rem;
-				color: rgb(black);
+				margin: 0;
+				color: rgb(var(--black));
 			}
-			.description {
-				margin-bottom: 1rem;
-				margin-top: 1rem;
-				color: black;
-				font-size: 1.125rem;
+			ul li a:hover h4,
+			ul li a:hover .date {
+				color: rgb(var(--accent));
 			}
 			@media (max-width: 720px) {
-				ul li:first-child,
-				ul li:nth-child(n+2) {
-					width: 100%;
-				}
 				ul {
 					gap: 0.5em;
 				}
 				ul li {
 					width: 100%;
-					margin: 0 auto;
+					text-align: center;
 				}
 				ul li:first-child {
 					margin-bottom: 0;
 				}
 				ul li:first-child .title {
-					font-size: 1.0em;
+					font-size: 1.563em;
 				}
-				ul li .title {
-					font-size: 1.0em;
-				}
-				ul li .description,
-				ul li .date {
-					font-size: 0.8em;
-				}
+			}
+			.tags_reading {
+				color: rgb(0, 0, 0);
+				font-family: sans-serif;
 			}
 		</style>
 	</head>
@@ -116,22 +103,23 @@ const posts = (await getCollection('blog')).sort(
 			<TagMap />
 			<section>
 				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/${post.id}/`}>
-									<img width={720} height={360} src={post.data.heroImage} alt="" />
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-									<p class="description">
-										{post.data.description}
-									</p>
-								</a>
-							</li>
-						))
-					}
+					{posts.slice(0, pagination.pageSize).map((post) => (
+						<li>
+							<a href={`/${post.id}/`}>
+								<img width={720} height={360} src={post.data.heroImage} alt="" />
+								<h4 class="title">{post.data.title}</h4>
+								<p class="date">
+									<FormattedDate date={post.data.pubDate} />
+								</p>
+								<p class="description">
+									{post.data.description}
+								</p>
+								<p class="tags_reading">
+									🏷️{post.data.tags} |🕛{post.data.readingtime}
+								</p>
+							</a>
+						</li>
+					))}
 				</ul>
 			</section>
 		</main>

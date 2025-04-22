@@ -3,10 +3,11 @@ pubDate: Apr 04 2025
 heroImage: /placeholder.png
 title: Keks Magazin Fotowettbewerb 25
 tags:
-  - nothing
+  - Keks Magazin
 description: 
   Mach mit bei unserem diesjährigen Fotowettbewerb! Hier findest du alle Infos dazu
 author: Keks Magazin
+readingtime: 2 Min
 ---
 
 ##### Dieses Jahr findet der erste Keks Magazin Fotowettbewerb statt!
