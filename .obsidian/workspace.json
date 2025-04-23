@@ -11,10 +11,12 @@
             "id": "6cf259e0635a9b53",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Neuer Tab"
+              "type": "image",
+              "state": {
+                "file": "public/WileyOpenAir2024.png"
+              },
+              "icon": "lucide-image",
+              "title": "WileyOpenAir2024"
             }
           }
         ]
@@ -189,6 +191,8 @@
   },
   "active": "6cf259e0635a9b53",
   "lastOpenFiles": [
+    "public/favicon.ico",
+    "public/WileyOpenAir2024.png",
     "src/content/blog/5-Tipps-für-den-Umweltschutz.md",
     "src/content/blog/Keks-Magazin-Fotowettbewerb-25.md",
     "src/content/blog",
@@ -232,7 +236,6 @@
     "node_modules/@udecode/plate-floating/node_modules/@floating-ui/react/README.md",
     "node_modules/@udecode/plate-floating/node_modules/@floating-ui/react-dom/README.md",
     "node_modules/@udecode/plate/node_modules/@udecode/plate-table/README.md",
-    "node_modules/altair-static/build/dist/iframe-sandbox/vite.svg",
-    "node_modules/@graphiql/react/src/icons/type.svg"
+    "node_modules/altair-static/build/dist/iframe-sandbox/vite.svg"
   ]
 }
