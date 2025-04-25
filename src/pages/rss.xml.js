@@ -12,8 +12,5 @@ export async function GET(context) {
 			...post.data,
 			link: `/${post.id}/`,
 		})),
-		author: post.data.author,
-		readingTime: post.data.readingTime,
-		tags: post.data.tags,
 	});
 }
