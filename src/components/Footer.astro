@@ -3,11 +3,42 @@ const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} Keks Magazin Redaktion. Alle Rechte vorbehalten.
+	<div class="footer-top">
+		<img src="/Logo.png" alt="Keks Magazin Logo" width="70" height="70" />
+		<h4>Keks Magazin</h4>
+	</div>
+	<div class="footer-bottom">
+		<div class="footer-item">
+			<h5>Social</h5>
+			<a href="https://ww.instagram.com/keks-magazin">Instagram</a><br>
+			<a href="https://www.bsky.app/profile/keks-magazin.de">Bluesky</a><br>
+			<a href="https://www.youtube.com/@KeksMagazin">YouTube</a><br>
+			<a href="https://whatsapp.com/channel/0029Vak5TC85Ui2bu0KfWm0T">WhatsApp Kanal</a><br>
+			<a href="/rss.xml">RSS Feed</a>
+		</div>
+		<div class="footer-item">
+			<h5>Seiten</h5>
+			<a href="/">Startseite</a><br>
+			<a href="/podcast">Podcast</a><br>
+			<a href="/about">Über uns</a><br>
+			<a href="/search">Suche</a><br>
+			<br>
+		</div>
+		<div class="footer-item">
+			<h5>Themen</h5>
+			<a href="/tags/reportagen">Reportagen</a><br>
+			<a href="/tags/lifestyle">Lifestyle</a><br>
+			<a href="/tags/öpnv">ÖPNV</a><br>
+			<a href="/tags/stadtpoltik">Stadtpolitik</a><br>
+			<a href="/tags/interviews">Interviews</a><br>
+	</div>
+	<br>
+	&copy; {today.getFullYear()} Keks Magazin Redaktion. All rights reserved.
 	<br />
-	<a href="/impressum">Impressum</a>
-	<a href="/datenschutz">Datenschutz</a>
-	</footer>
+	<p><a href="/impressum">Impressum</a> |
+	<a href="/datenschutz">Datenschutz</a></p>
+
+</footer>
 <style>
 	footer {
 		padding: 2em 1em 6em 1em;
@@ -15,11 +46,38 @@ const today = new Date();
 		color: rgb(var(--gray));
 		text-align: center;
 	}
+	img {
+		border-radius: 0.2em;
+		margin-right: 0rem;
+		margin-bottom: 1em;
+	}
 	a {
 		color: rgb(var(--gray));
 		text-decoration: none;
 	}
 	a:hover {
-		color: rgb(8, 243, 169);
+		color: rgb(10, 183, 114);
+	}
+	.footer-top {
+		display: flex;
+	}
+	h4 {
+		margin-top: 0.9em;
+		margin-left: 1em;
+	}
+
+	.footer-item {
+		display: inline-block;
+		margin: 2em 2em;
+		text-align: center;
+	}
+	.footer-item a {
+		font-size: 1em;
+	}
+	@Media (max-width: 720px) {
+		.footer-item {
+			display: block;
+			margin: 1em 0;
+		}
 	}
 </style>
