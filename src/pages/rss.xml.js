@@ -11,7 +11,11 @@ export async function GET(context) {
 		items: posts.map((post) => ({
 			...post.data,
 			link: `/${post.id}/`,
-			pubDate: post.data.pubDate, 
+			pubDate: post.data.pubDate,
+			author: post.data.author,
+			readingTime: post.data.readingTime,
+			updatedDate: post.data.updatedDate,
+			tags: post.data.tags,
 		})),
 	});
 }
