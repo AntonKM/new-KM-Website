@@ -11,12 +11,14 @@
             "id": "6cf259e0635a9b53",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "public/WileyOpenAir2024.png"
+                "file": "src/content/blog/5-Tipps-für-den-Umweltschutz.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "WileyOpenAir2024"
+              "icon": "lucide-file",
+              "title": "5-Tipps-für-den-Umweltschutz"
             }
           }
         ]
@@ -191,6 +193,10 @@
   },
   "active": "6cf259e0635a9b53",
   "lastOpenFiles": [
+    "src/content/blog/Wiley Open Air 2025.md",
+    "src/content/blog/5-Tipps-für-den-Umweltschutz.md",
+    "src/content/blog/Keks-Magazin-Fotowettbewerb-25.md",
+    "public/WileyOpenAir2024.png",
     "src/content/blog/posts/1post.md",
     "src/content/blog/posts",
     "src/content/blog/blog/1post.md",
@@ -214,9 +220,6 @@
     "dist/aboutus.png",
     "public/Logo.png",
     "public/KMLogoNEU.png",
-    "public/WileyOpenAir2024.png",
-    "src/content/blog/5-Tipps-für-den-Umweltschutz.md",
-    "src/content/blog/Keks-Magazin-Fotowettbewerb-25.md",
     "src/content/blog/5-Tipps-für-den-Umweltschutz copy 6.md",
     "src/content/blog/5-Tipps-für-den-Umweltschutz copy 5.md",
     "src/content/blog/5-Tipps-für-den-Umweltschutz copy 4.md",
