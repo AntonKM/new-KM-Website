@@ -1,5 +1,6 @@
 ---
 const today = new Date();
+import stylesheet from '../styles/global.css';
 ---
 
 <footer>
@@ -42,7 +43,7 @@ const today = new Date();
 	<a href="/datenschutz">Datenschutz</a></p>
 
 </footer>
-<style>
+<style is:global>
 	footer {
 		padding: 2em 1em 6em 1em;
 		background: linear-gradient(var(--gray-gradient)) no-repeat;
@@ -57,9 +58,6 @@ const today = new Date();
 	a {
 		color: rgb(var(--gray));
 		text-decoration: none;
-	}
-	a:hover {
-		color: rgb(10, 183, 114);
 	}
 	.footer-top {
 		display: flex;
@@ -82,5 +80,20 @@ const today = new Date();
 			display: block;
 			margin: 1em 0;
 		}
+	}
+	@media (prefers-color-scheme: dark) {
+		footer {
+			background: #2f2f2f;
+			color: rgb(187, 187, 187);
+		}
+		a {
+			color: rgb(187, 187, 187);
+		}
+		h4,
+		h5 {
+			color: rgb(228, 228, 228);
+		}
+
+
 	}
 </style>

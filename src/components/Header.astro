@@ -13,6 +13,7 @@ import { SITE_TITLE } from '../consts';
 				<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
 			</svg>
 		</a>
+		
 	</nav>
 </header>
 <style>
@@ -41,4 +42,17 @@ import { SITE_TITLE } from '../consts';
 		margin-right: 2px;
 		margin-top: 1px;
   	}
+	@media (prefers-color-scheme: dark) {
+		header {
+			background: #2f2f2f;
+			box-shadow: 0 2px 9px rgba(var(--white), 50%);
+			margin-bottom: 0;
+		}
+		nav a {
+			color: rgb(228, 228, 228);
+		}
+		
+	}
+		
 </style>
+

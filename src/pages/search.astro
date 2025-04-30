@@ -3,9 +3,11 @@ import SearchComponent from "astro-pagefind/components/Search";
 import RootLayout from "../layouts/RootLayout.astro";
 ---
 <RootLayout>
-    <h2 style="text-align: center; margin-bottom: 2rem">Suche 🔍</h2>
-    <SearchComponent id="search" className="pagefind-ui" uiOptions={{ showImages: false}} />
-
+    
+        <h2 style="text-align: center; margin-bottom: 2rem">Suche 🔍</h2>
+    <div class="search">
+        <SearchComponent id="search"  className="pagefind-ui" uiOptions={{ showImages: false}} />
+    </div>
     <div class="tagmap__container">
         <h4>Themen 🏷️</h4>
         <div class="tagmap__item">
@@ -37,5 +39,21 @@ import RootLayout from "../layouts/RootLayout.astro";
     }
     a:hover {
         text-decoration: underline;
+    }
+    @media (prefers-color-scheme: dark) {
+        .tagmap__link {
+            color: rgb(201, 201, 201);
+        }
+        h2,
+        h4 {
+            color: rgb(228, 228, 228);
+        }
+
+        .search {
+            border-radius: 0.6rem;
+            padding: 1rem;
+            padding-bottom: 1rem;
+            background-image: linear-gradient(to right, #666666, rgb(85, 85, 85));
+        }
     }
 </style>

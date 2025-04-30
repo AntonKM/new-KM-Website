@@ -81,6 +81,23 @@ const filteredPosts = posts.filter(post => post.data.tags?.includes(tag));
 			.tags_reading {
 				color: rgb(114, 114, 114);
 			}
+			@media (prefers-color-scheme: dark) {
+				main {
+					background-color: #2f2f2f;
+				}
+				ul li a {
+					color: rgb(228, 228, 228);
+				}
+				.title {
+					color: rgb(228, 228, 228);
+				}
+				.date {
+					color: rgb(228, 228, 228);
+				}
+				.tags_reading {
+					color: rgb(228, 228, 228);
+				}
+			}
 		</style>
 	</head>
 	<body>
