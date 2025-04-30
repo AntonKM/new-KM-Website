@@ -1,5 +1,5 @@
 ---
-pubDate: Apr 04 2025
+pubDate: Apr 04 2025 12:41:00 GMT
 heroImage: /KM-Fotowettbewerb.png
 title: Keks Magazin Fotowettbewerb 25
 tags:

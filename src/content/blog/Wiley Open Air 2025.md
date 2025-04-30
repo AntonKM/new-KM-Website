@@ -1,5 +1,5 @@
 ---
-pubDate: 27 Apr 25
+pubDate: 27 Apr 25 12:41:00 GMT
 heroImage: /WileyOpenAir2024.png 
 title: Sido und die 90er Live beim Wiley Open Air 2025
 tags:
