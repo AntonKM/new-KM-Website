@@ -1,6 +1,6 @@
 ---
 pubDate: May 1 2025
-heroImage: /placeholder.png
+heroImage: /Rezepte.png
 title: Ein Rezept für Zitronen und Limetteneistee
 tags:
   - Lifestyle
