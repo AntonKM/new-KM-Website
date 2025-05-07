@@ -42,7 +42,7 @@ Nabada hat eine lange Tradition und fand das erste Mal offiziell im Jahr 1927 st
 Mehr Infos zum Nabada findet ihr auf der Website der Stadt Ulm, wo ihr auch die Regeln findet, die man beachten muss, wenn man beim Nabada mitmachen will https://www.ulm.de/tourismus/stadtgeschichte/feste-und-traditionen/nabada .
 
 
-Ihr habt ein Fest gefunden, dass wir vergessen haben? Schreibt mir einfach eine Mail an anton@keks-magazin.de
+###### Ihr habt ein Fest gefunden, dass ich vergessen habe? Schreibt mir einfach eine Mail an anton@keks-magazin.de
 
 
 
