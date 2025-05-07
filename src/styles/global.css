@@ -97,10 +97,10 @@ pre > code {
 	all: unset;
 }
 blockquote {
-	border-left: 3px solid rgb(5, 255, 167);
+	border-left: 3px solid rgb(3, 197, 148);
 	padding: 0 0 0 20px;
 	margin: 0px;
-	font-size: 1.333em;
+	font-size: 1em;
 }
 hr {
 	border: none;
