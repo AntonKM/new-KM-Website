@@ -26,7 +26,7 @@ Mehr Infos gibt es hier https://nu.neu-ulm.de/neu-ulm-erleben/veranstaltungen/fe
 #### Wiley Open Air am 5. und 6. Juli
 Jedes Jahr findet im Wiley Sport- und Freizeitpark das Wiley Open Air statt. Es treten verschiedene berühmte Sänger auf. Dieses Jahr die 90er Live und der Rapper Sido. 
 
-Mehr zum Wiley Open Air 2025 erfahrt ihr in unserem Artikel dazu [[content/blog/Wiley Open Air 2025]]
+Mehr zum Wiley Open Air 2025 erfahrt ihr in unserem Artikel dazu /Wiley-Open-Air-2025
 
 #### Lichterserenade am 19. Juli 
 Jedes Jahr findet die von der Gesellschaft der Donaufreunde e.V. veranstaltete Lichterserenade statt. Dieses Jahr am 19. Juli . 
