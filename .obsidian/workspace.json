@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:Lifestyle",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Lesezeichen"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -191,15 +192,15 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "484a62b5d1ce5bf6",
+  "active": "9f75820fae895244",
   "lastOpenFiles": [
     "src/content/blog/Ein Rezept für Zitroneneistee.md",
+    "src/content/blog/5-Tipps-für-den-Umweltschutz.md",
     "src/content/blog/Interview mit Umwelt AG.md",
     "src/content/blog/5 wichtigsten Events im Sommer.md",
     "src/content/blog/Keks-Magazin-Fotowettbewerb-25.md",
     "src/content/blog/Wiley Open Air 2025.md",
     "content/Wiley Open Air 2025.md",
-    "src/content/blog/5-Tipps-für-den-Umweltschutz.md",
     "content",
     "node_modules/astro/dist/assets/fonts/logic/normalize-remote-font-faces.d.ts",
     "node_modules/astro/dist/assets/fonts/logic/resolve-families.js",
