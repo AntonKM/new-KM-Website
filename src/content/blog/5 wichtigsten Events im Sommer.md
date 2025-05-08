@@ -1,6 +1,6 @@
 ---
 pubDate: May 7 2025
-heroImage: /placeholder.png
+heroImage: /placeholder2.png
 title: Die 5 wichtigsten Events in Ulm, Neu-Ulm und Umgebung im Sommer 2025
 tags:
   - Kultur

@@ -194,6 +194,7 @@
   },
   "active": "9f75820fae895244",
   "lastOpenFiles": [
+    "public/placeholder2.png",
     "src/content/blog/Ein Rezept für Zitroneneistee.md",
     "src/content/blog/Interview mit Umwelt AG.md",
     "src/content/blog/Keks-Magazin-Fotowettbewerb-25.md",
@@ -238,7 +239,6 @@
     "src/content/blog/5-Tipps-für-den-Umweltschutz copy 2.md",
     "src/content/blog/5-Tipps-für-den-Umweltschutz copy.md",
     "src/content/blog/bla.md",
-    "node_modules/@tinacms/mdx/node_modules/remark-gfm/node_modules/mdast-util-gfm/readme.md",
-    "node_modules/@tinacms/mdx/node_modules/remark-gfm/node_modules/micromark-extension-gfm/readme.md"
+    "node_modules/@tinacms/mdx/node_modules/remark-gfm/node_modules/mdast-util-gfm/readme.md"
   ]
 }
