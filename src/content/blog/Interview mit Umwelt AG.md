@@ -8,7 +8,7 @@ description: Wir haben ein Interview mit der Umwelt AG des Albert-Einstein Gymna
 author: Anton
 readingtime: 7 Min
 ---
-Wir haben die Schülerinnen und Schüler aus der Umwelt AG des Albert-Einstein Gymnasiums in Ulm besucht und haben ein Interview mit ihnen geführt. 
+Wir haben die Schülerinnen und Schüler aus der Umwelt AG des Albert-Einstein Gymnasiums in Ulm besucht und haben ein Interview mit ihnen geführt.  
 
 
 *Was macht ihr in der Umwelt AG?*
