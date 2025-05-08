@@ -3,7 +3,7 @@ pubDate: May 8 2025
 heroImage: /placeholder.png
 title: Interview mit der Umwelt AG
 tags:
-  - "#Lifestyle"
+  - Lifestyle
 description: Wir haben ein Interview mit der Umwelt AG des Albert-Einstein Gymnasiums Ulm/Wiblingen geführt.
 author: Anton
 readingtime: 7 Min

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "960742b460b10b9f",
+        "id": "70aa0f3f016bf969",
         "type": "tabs",
         "children": [
           {
-            "id": "6cf259e0635a9b53",
+            "id": "e4a8804cb87f9fb8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -191,7 +191,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "6cf259e0635a9b53",
+  "active": "484a62b5d1ce5bf6",
   "lastOpenFiles": [
     "src/content/blog/Ein Rezept für Zitroneneistee.md",
     "src/content/blog/Interview mit Umwelt AG.md",
