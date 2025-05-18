@@ -1,102 +1,90 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<!doctype html>
-<html lang="de">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    <style>
-      h6,
-      h5,
-      h4,
-      h3,
-      h2,
-      h1 {
-        text-align: center;
-        margin-top: 1em;
-      }
-      p {
-        text-align: center;
-      }
-      .embed {
-        max-width: 720px;
-        margin: 0 auto;
-        padding: 1rem;
-      }
-      .container1 {
-        border: 1px solid rgb(5, 255, 167);
-        border-radius: 25px;
-        margin: 5rem;
-        padding: 1%;
-      }
-      .container1 iframe {
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 1rem;
-      }
-      .container2 {
-        border: 1px solid rgb(5, 255, 167);
-        border-radius: 25px;
-        margin: 5rem;
-        padding: 2rem;
-      }
-    </style>
-  </head>
-  <body>
-    <Header />
-    <h1>Podcast 🎙️</h1>
-    <h3>Hier findest du alles zu unserem Podcast</h3>
-    <div class="container2">
-      <h4>Über unseren Podcast</h4>
-      <p>
-        Unser Podcast ULMCAST (ehemals Keks Magazin) ist ein Podcast über Ulm,
-        um Ulm und um Ulm herum. Wir sprechen wöchentlich über drei Themen in
-        Ulm, außerdem gibt es wie manche unserer Hörer es noch von Keks Magazin
-        kennen, selbstverständlich weiterhin ein Thema aus der aktuellen
-        Politik.
-      </p>
-    </div>
-    <div class="">
-      <h4>Höre dir unseren Podcast hier an</h4>
-      <iframe
-        allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
-        frameborder="0"
-        height="450"
-        style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;"
-        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-        src="https://embed.podcasts.apple.com/de/podcast/ulmcast-der-podcast-f%C3%BCr-ulm-und-umgebung/id1778930782"
-      ></iframe>
-    </div>
-    <div class="container2">
-      <h4>Plattformen auf denen unser Podcast vefügbar ist</h4>
-      <p>
-        Unser Podcast ist auf <a
-          href="https://open.spotify.com/show/4K4jrmdHuvpU2hTvsyIYPL">Spotify</a
-        >, <a
-          href="https://music.amazon.de/podcasts/7f9d972b-314f-418e-86eb-d7ae4a4aeeb6/keks-magazin"
-          >Amazon Music</a
-        >, <a
-          href="https://podcasts.apple.com/us/podcast/keks-magazin/id1778930782"
-          >Apple Podcasts</a
-        >, <a href="https://overcast.fm/itunes1778930782">Overcast</a>,<a
-          href="https://www.podchaser.com/podcasts/ulmcast-der-podcast-fur-ulm-un-5889867"
-          >Podchaser</a
-        >,<a href="https://www.deezer.com/de/show/1001488731">Deezer</a>,<a
-          href="https://castbox.fm/channel/Keks-Magazin-id6346820?country=de"
-          >Castbox</a
-        >, <a
-          href="https://plus.rtl.de/podcast/ulmcast-der-podcast-fuer-ulm-und-umgebung-1an8ymco2zyzx"
-          >RTL+ Music,</a
-        > und <a
-          href="https://goodpods.com/podcasts/ulmcast-der-podcast-für-ulm-und-umgebung-612191"
-          >Goodpods</a
-        > verfügbar.
-      </p>
-    </div>
-    <Footer />
-  </body>
-</html>
+<style>
+  h6,
+  h5,
+  h4,
+  h3,
+  h2,
+  h1 {
+    text-align: center;
+    margin-top: 1em;
+  }
+  p {
+    text-align: center;
+  }
+  .embed {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .container1 {
+    border: 1px solid rgb(5, 255, 167);
+    border-radius: 25px;
+    margin: 5rem;
+    padding: 1%;
+  }
+  .container1 iframe {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  .container2 {
+    border: 1px solid rgb(5, 255, 167);
+    border-radius: 25px;
+    margin: 5rem;
+    padding: 2rem;
+  }
+</style>
+<BaseLayout>
+  <h1>Podcast 🎙️</h1>
+  <h3>Hier findest du alles zu unserem Podcast</h3>
+  <div class="container2">
+    <h4>Über unseren Podcast</h4>
+    <p>
+      Unser Podcast ULMCAST (ehemals Keks Magazin) ist ein Podcast über Ulm, um
+      Ulm und um Ulm herum. Wir sprechen wöchentlich über drei Themen in Ulm,
+      außerdem gibt es wie manche unserer Hörer es noch von Keks Magazin kennen,
+      selbstverständlich weiterhin ein Thema aus der aktuellen Politik.
+    </p>
+  </div>
+  <div class="">
+    <h4>Höre dir unseren Podcast hier an</h4>
+    <iframe
+      allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+      frameborder="0"
+      height="450"
+      style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;"
+      sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+      src="https://embed.podcasts.apple.com/de/podcast/ulmcast-der-podcast-f%C3%BCr-ulm-und-umgebung/id1778930782"
+    ></iframe>
+  </div>
+  <div class="container2">
+    <h4>Plattformen auf denen unser Podcast vefügbar ist</h4>
+    <p>
+      Unser Podcast ist auf <a
+        href="https://open.spotify.com/show/4K4jrmdHuvpU2hTvsyIYPL">Spotify</a
+      >, <a
+        href="https://music.amazon.de/podcasts/7f9d972b-314f-418e-86eb-d7ae4a4aeeb6/keks-magazin"
+        >Amazon Music</a
+      >, <a
+        href="https://podcasts.apple.com/us/podcast/keks-magazin/id1778930782"
+        >Apple Podcasts</a
+      >, <a href="https://overcast.fm/itunes1778930782">Overcast</a>,<a
+        href="https://www.podchaser.com/podcasts/ulmcast-der-podcast-fur-ulm-un-5889867"
+        >Podchaser</a
+      >,<a href="https://www.deezer.com/de/show/1001488731">Deezer</a>,<a
+        href="https://castbox.fm/channel/Keks-Magazin-id6346820?country=de"
+        >Castbox</a
+      >, <a
+        href="https://plus.rtl.de/podcast/ulmcast-der-podcast-fuer-ulm-und-umgebung-1an8ymco2zyzx"
+        >RTL+ Music,</a
+      > und <a
+        href="https://goodpods.com/podcasts/ulmcast-der-podcast-für-ulm-und-umgebung-612191"
+        >Goodpods</a
+      > verfügbar.
+    </p>
+  </div>
+</BaseLayout>

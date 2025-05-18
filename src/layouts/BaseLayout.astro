@@ -6,22 +6,21 @@ import "../styles/global.css";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 const { pageTitle } = Astro.props;
 ---
+
 <!doctype html>
 <html lang="de">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />  
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <style>
       body {
         margin: 0;
         padding: 0;
         text-align: center;
       }
-
     </style>
   </head>
   <body>
     <Header />
-    <h1>{pageTitle}</h1>
     <slot />
     <Footer />
   </body>

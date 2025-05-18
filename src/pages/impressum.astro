@@ -1,41 +1,56 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import stylesheet from '../styles/global.css';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
-<!doctype html>
-<html lang="de">
-	<head>
-		
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-        <style>
-            main {
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <Header />
-        <main>
-            <h1>Impressum</h1>
-            <p>Ein unabhängiges, nicht kommerzielles Jugendprojekt aus Ulm/Neu-Ulm</p>
-            <h4>Redaktionelle Leitung</h4>
-            <p>Anton Ponomarev</p>
-            <p>Keks Magazin ist ein nicht gewerbliches Projekt, das keinerlei kommerzielle Interessen verfolgt. 
-            <p>Es wird vollständig von Jugendlichen betrieben und dient ausschließlich zur Förderung der Medienkompetenz und journalistischer Fähigkeiten. </p>
-            <h4>Verantwortlich gemäß §18 Abs. 2 MStV</h4>
-            <p>Anton Ponomarev (im Rahmen eines privaten Jugendprojekts)</p>
-            <h4>Kontakt</h4>
-            <p>E-Mail: <a href="Mailto:kontakt@keks-magazin.de">kontakt@keks-magazin.de</a></p>
-            <h4>Hinweis</h4>
-            <p>Zum Schutz der Privatsphäre der Beteiligten - insbesondere weil es sich um minderjährige Betreiber handelt – wird auf die Angabe einer vollständigen Adresse verzichtet. Bei berechtigtem Interesse kann über die genannte E-Mail-Adresse Kontakt aufgenommen werden.</p>
-            <h4>Verlinkungen auf die Seiten Dritter</h4>
-            <p>Unsere Website enthält Links zu externen Webseiten Dritter. Auf deren Inhalte haben wir keinen Einfluss. Deshalb übernehmen wir für diese fremden Inhalte auch keine Gewähr. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich.</p>
-            <h4>Urheberrecht</h4>
-            <p>Alle Inhalte und Werke auf dieser Website (Texte, Bilder, Videos etc.), die von uns erstellt wurden, unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung oder sonstige Nutzung außerhalb der Grenzen des Urheberrechts bedarf der schriftlichen Zustimmung der jeweiligen Autor*innen.</p>
-        </main>
-        <Footer />
-    </body>
-</html>
+
+<style>
+  h1,
+  h2,
+  p {
+    margin: 1em;
+  }
+</style>
+<BaseLayout>
+  <h1>Impressum</h1>
+  <p>Ein unabhängiges, nicht kommerzielles Jugendprojekt aus Ulm/Neu-Ulm</p>
+  <h4>Redaktionelle Leitung</h4>
+  <p>Anton Ponomarev</p>
+  <p>
+    Keks Magazin ist ein nicht gewerbliches Projekt, das keinerlei kommerzielle
+    Interessen verfolgt.
+    <p>
+      Es wird vollständig von Jugendlichen betrieben und dient ausschließlich
+      zur Förderung der Medienkompetenz und journalistischer Fähigkeiten.
+    </p>
+    <h4>Verantwortlich gemäß §18 Abs. 2 MStV</h4>
+    <p>Anton Ponomarev (im Rahmen eines privaten Jugendprojekts)</p>
+    <h4>Kontakt</h4>
+    <p>
+      E-Mail: <a href="Mailto:kontakt@keks-magazin.de"
+        >kontakt@keks-magazin.de</a
+      >
+    </p>
+    <h4>Hinweis</h4>
+    <p>
+      Zum Schutz der Privatsphäre der Beteiligten - insbesondere weil es sich um
+      minderjährige Betreiber handelt – wird auf die Angabe einer vollständigen
+      Adresse verzichtet. Bei berechtigtem Interesse kann über die genannte
+      E-Mail-Adresse Kontakt aufgenommen werden.
+    </p>
+    <h4>Verlinkungen auf die Seiten Dritter</h4>
+    <p>
+      Unsere Website enthält Links zu externen Webseiten Dritter. Auf deren
+      Inhalte haben wir keinen Einfluss. Deshalb übernehmen wir für diese
+      fremden Inhalte auch keine Gewähr. Für die Inhalte der verlinkten Seiten
+      ist stets der jeweilige Anbieter oder Betreiber verantwortlich.
+    </p>
+    <h4>Urheberrecht</h4>
+    <p>
+      Alle Inhalte und Werke auf dieser Website (Texte, Bilder, Videos etc.),
+      die von uns erstellt wurden, unterliegen dem deutschen Urheberrecht.
+      Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung,
+      Bearbeitung, Verbreitung oder sonstige Nutzung außerhalb der Grenzen des
+      Urheberrechts bedarf der schriftlichen Zustimmung der jeweiligen
+      Autor*innen.
+    </p>
+  </p>
+</BaseLayout>

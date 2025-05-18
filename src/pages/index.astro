@@ -117,7 +117,8 @@ const pagination = {
         }
       }
     </style>
-  </head><body>
+  </head>
+  <body>
     <Header />
     <main>
       <TagMap />
@@ -139,7 +140,8 @@ const pagination = {
                   </p>
                   <p class="description">{post.data.description}</p>
                   <p class="tags_reading">
-                    🏷️{post.data.tags} |🕛{post.data.readingtime}
+                    🏷️{post.data.tags} |🕛{post.data.readingtime} |🖊️
+                    {post.data.author}
                   </p>
                 </a>
               </li>

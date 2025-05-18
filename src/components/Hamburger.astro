@@ -1,57 +1,58 @@
 ---
+
 ---
+
 <div class="hamburger-menu">
-    <input id="menu__toggle" type="checkbox" />
-    <label class="menu__btn" for="menu__toggle">
-      <span></span>
-    </label>
+  <input id="menu__toggle" type="checkbox" />
+  <label class="menu__btn" for="menu__toggle">
+    <span></span>
+  </label>
 
-    <ul class="menu__box">
-      <li><a class="menu__item" href="/">Home</a></li>
-      <li><a class="menu__item" href="../about">Über uns</a></li>
-      <li><a class="menu__item" href="../umfragen">Umfragen</a></li>
-      <li><a class="menu__item" href="../podcast">Podcast</a></li>
-      <li><a class="menu__item" href="/rss.xml">RSS Feed</a></li>
-    </ul>
-  </div>
+  <ul class="menu__box">
+    <li><a class="menu__item" href="/">Home</a></li>
+    <li><a class="menu__item" href="../about">Über uns</a></li>
+    <li><a class="menu__item" href="../podcast">Podcast</a></li>
+    <li><a class="menu__item" href="/rss.xml">RSS Feed</a></li>
+  </ul>
+</div>
 <style>
-    #menu__toggle {
+  #menu__toggle {
     opacity: 0;
-    }
+  }
 
-    #menu__toggle:checked ~ .menu__btn > span {
+  #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
-    }
-    #menu__toggle:checked ~ .menu__btn > span::before {
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
     top: 0;
     transform: rotate(0);
-    }
-    #menu__toggle:checked ~ .menu__btn > span::after {
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
     top: 0;
     transform: rotate(90deg);
-    }
-    #menu__toggle:checked ~ .menu__box {
+  }
+  #menu__toggle:checked ~ .menu__box {
     visibility: visible;
     left: 0;
-    }
+  }
 
-    .menu__btn {
+  .menu__btn {
     display: flex;
     align-items: center;
     position: fixed;
     top: 15px;
     left: 25px;
 
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
 
     cursor: pointer;
-    z-index: 1;
-    }
+    z-index: 11;
+  }
 
-    .menu__btn > span,
-    .menu__btn > span::before,
-    .menu__btn > span::after {
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
     display: block;
     position: absolute;
 
@@ -60,18 +61,18 @@
 
     background-color: #000000;
 
-    transition-duration: .30s;
-    }
-    .menu__btn > span::before {
-    content: '';
+    transition-duration: 0.3s;
+  }
+  .menu__btn > span::before {
+    content: "";
     top: -8px;
-    }
-    .menu__btn > span::after {
-    content: '';
+  }
+  .menu__btn > span::after {
+    content: "";
     top: 8px;
-    }
+  }
 
-    .menu__box {
+  .menu__box {
     display: block;
     position: fixed;
     visibility: hidden;
@@ -87,12 +88,13 @@
     list-style: none;
 
     background-color: rgba(236, 239, 241, 0.97);
-    box-shadow: 0 0 10px  rgb(5, 213, 140);
+    box-shadow: 0 0 10px rgb(5, 213, 140);
 
-    transition-duration: .40s;
-    }
+    transition-duration: 0.4s;
+    z-index: 10;
+  }
 
-    .menu__item {
+  .menu__item {
     display: block;
     padding: 12px 25px;
 
@@ -102,30 +104,29 @@
 
     text-decoration: none;
 
-    transition-duration: .40s;
+    transition-duration: 0.4s;
+  }
+  .menu__item:hover {
+    background-color: #e9f8ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    .menu__box {
+      background-color: #333333;
     }
     .menu__item:hover {
-    background-color: #e9f8ff;
+      background-color: #525252;
     }
-    @media (prefers-color-scheme: dark) {
-        .menu__box {
-            background-color: #333333; 
-        }
-        .menu__item:hover {
-            background-color: #525252;
-        }
-        .menu__item {
-            color: rgb(228, 228, 228);
-        }
-        .menu__btn > span {
-            background-color: rgb(228, 228, 228);
-        }
-        .menu__btn > span::before {
-            background-color: rgb(228, 228, 228);
-        }
-        .menu__btn > span::after {
-            background-color: rgb(228, 228, 228);
-        }
-        
+    .menu__item {
+      color: rgb(228, 228, 228);
     }
+    .menu__btn > span {
+      background-color: rgb(228, 228, 228);
+    }
+    .menu__btn > span::before {
+      background-color: rgb(228, 228, 228);
+    }
+    .menu__btn > span::after {
+      background-color: rgb(228, 228, 228);
+    }
+  }
 </style>

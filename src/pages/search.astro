@@ -2,58 +2,64 @@
 import SearchComponent from "astro-pagefind/components/Search";
 import RootLayout from "../layouts/RootLayout.astro";
 ---
+
 <RootLayout>
-    
-        <h2 style="text-align: center; margin-bottom: 2rem">Suche 🔍</h2>
-    <div class="search">
-        <SearchComponent id="search"  className="pagefind-ui" uiOptions={{ showImages: false}} />
+  <h2 style="text-align: center; margin-bottom: 2rem">Suche 🔍</h2>
+  <div class="search">
+    <SearchComponent
+      id="search"
+      className="pagefind-ui"
+      uiOptions={{ showImages: false }}
+    />
+  </div>
+  <div class="tagmap__container">
+    <h4>Themen 🏷️</h4>
+    <div class="tagmap__item">
+      <a href="/tags/reportagen" class="tagmap__link">Reportagen</a>
     </div>
-    <div class="tagmap__container">
-        <h4>Themen 🏷️</h4>
-        <div class="tagmap__item">
-            <a href="/tags/reportagen" class="tagmap__link">Reportagen</a>
-        </div>
-        <div class="tagmap__item">
-            <a href="/tags/Lifestyle" class="tagmap__link">Lifestyle</a>
-        </div>
-        <div class="tagmap__item">
-            <a href="/tags/öpnv" class="tagmap__link">ÖPNV</a>
-        </div>
-        <div class="tagmap__item">
-            <a href="/tags/stadtpolitik" class="tagmap__link">Stadtpolitik</a>
-        </div>
-        <div class="tagmap__item">
-            <a href="/tags/interviews" class="tagmap__link">Interviews</a>
-        </div>
+    <div class="tagmap__item">
+      <a href="/tags/Lifestyle" class="tagmap__link">Lifestyle</a>
     </div>
+    <div class="tagmap__item">
+      <a href="/tags/öpnv" class="tagmap__link">ÖPNV</a>
+    </div>
+    <div class="tagmap__item">
+      <a href="/tags/stadtpolitik" class="tagmap__link">Stadtpolitik</a>
+    </div>
+    <div class="tagmap__item">
+      <a href="/tags/interviews" class="tagmap__link">Interviews</a>
+    </div>
+  </div>
 </RootLayout>
 
-
 <style>
-    .tagmap__container {
-        margin-top: 2rem;
+  .tagmap__container {
+    margin-top: 2rem;
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  h4 {
+    margin-left: 0;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  @media (prefers-color-scheme: dark) {
+    .tagmap__link {
+      color: rgb(201, 201, 201);
     }
-    a {
-        text-decoration: none;
-        cursor: pointer;    
+    h2,
+    h4 {
+      color: rgb(228, 228, 228);
     }
-    a:hover {
-        text-decoration: underline;
-    }
-    @media (prefers-color-scheme: dark) {
-        .tagmap__link {
-            color: rgb(201, 201, 201);
-        }
-        h2,
-        h4 {
-            color: rgb(228, 228, 228);
-        }
 
-        .search {
-            border-radius: 0.6rem;
-            padding: 1rem;
-            padding-bottom: 1rem;
-            background-image: linear-gradient(to right, #666666, rgb(85, 85, 85));
-        }
+    .search {
+      border-radius: 0.6rem;
+      padding: 1rem;
+      padding-bottom: 1rem;
+      background-image: linear-gradient(to right, #666666, rgb(85, 85, 85));
     }
+  }
 </style>

@@ -1,51 +1,70 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
-<!doctype html>
-<html lang="de">
-	<head>
-		
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-        <style>
-            main {
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <Header />
-        <main>
-            <h1>Datenschutzerklärung</h1>
 
-            <p>Wir nehmen den Schutz Ihrer Daten sehr ernst und möchten Sie daher über unsere Datenschutzpraktiken informieren.</p>
-            
-            <h2>Datenverarbeitung</h2>
-            
-            <p>Wir sammeln keine personenbezogenen Daten von unseren Besuchern. Wir verwenden keine Cookies oder andere Tracking-Technologien, um das Leserverhalten zu analysieren oder personalisierte Werbung anzuzeigen.</p>
-            
-            <h2>Externe Dienste</h2>
-            
-            <p>Wir nutzen den Apple Podcasts Embed Player, um unsere Podcasts auf unserer Seite anzuzeigen. Wenn Sie den Player verwenden, werden Ihre Daten von Apple verarbeitet. Bitte beachten Sie die <a href="https://www.apple.com/de/legal/privacy/data/de/apple-podcasts/" target="_blank">Datenschutzerklärung von Apple</a>, um mehr über die Verarbeitung Ihrer Daten zu erfahren.</p>
-            
-            <p>Wir verlinken auch auf diverse soziale Medien-Dienste, wie z.B. Facebook, Twitter oder Instagram. Wenn Sie auf diese Links klicken, werden Sie auf die jeweilige Plattform weitergeleitet und unterliegen den Datenschutzbestimmungen des jeweiligen Anbieters.</p>
-            
-            <h2>Datenweitergabe</h2>
-            
-            <p>Wir geben keine Daten an Dritte weiter, da wir keine Daten sammeln.</p>
-            
-            <h2>Rechte der Nutzer</h2>
-            
-            <p>Da wir keine personenbezogenen Daten sammeln, haben Sie keine Rechte auf Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer Daten.</p>
-            
-            <h2>Änderungen dieser Datenschutzerklärung</h2>
-            
-            <p>Wir können diese Datenschutzerklärung jederzeit ändern, um sie an neue Entwicklungen oder Gesetzesänderungen anzupassen. Bitte beachten Sie daher regelmäßig diese Seite, um sich über eventuelle Änderungen zu informieren.</p>
-            
-            <p>Wenn Sie Fragen oder Bedenken bezüglich unserer Datenschutzpraktiken haben, können Sie uns gerne kontaktieren.</p>
-        </main> 
-        <Footer />
-    </body>
-</html>
+<style>
+  h1,
+  h2,
+  p {
+    margin: 1em;
+  }
+</style>
+<BaseLayout>
+  <h1>Datenschutzerklärung</h1>
+
+  <p>
+    Wir nehmen den Schutz Ihrer Daten sehr ernst und möchten Sie daher über
+    unsere Datenschutzpraktiken informieren.
+  </p>
+
+  <h2>Datenverarbeitung</h2>
+
+  <p>
+    Wir sammeln keine personenbezogenen Daten von unseren Besuchern. Wir
+    verwenden keine Cookies oder andere Tracking-Technologien, um das
+    Leserverhalten zu analysieren oder personalisierte Werbung anzuzeigen.
+  </p>
+
+  <h2>Externe Dienste</h2>
+
+  <p>
+    Wir nutzen den Apple Podcasts Embed Player, um unsere Podcasts auf unserer
+    Seite anzuzeigen. Wenn Sie den Player verwenden, werden Ihre Daten von Apple
+    verarbeitet. Bitte beachten Sie die <a
+      href="https://www.apple.com/de/legal/privacy/data/de/apple-podcasts/"
+      target="_blank">Datenschutzerklärung von Apple</a
+    >, um mehr über die Verarbeitung Ihrer Daten zu erfahren.
+  </p>
+
+  <p>
+    Wir verlinken auch auf diverse soziale Medien-Dienste, wie z.B. Facebook,
+    Twitter oder Instagram. Wenn Sie auf diese Links klicken, werden Sie auf die
+    jeweilige Plattform weitergeleitet und unterliegen den
+    Datenschutzbestimmungen des jeweiligen Anbieters.
+  </p>
+
+  <h2>Datenweitergabe</h2>
+
+  <p>Wir geben keine Daten an Dritte weiter, da wir keine Daten sammeln.</p>
+
+  <h2>Rechte der Nutzer</h2>
+
+  <p>
+    Da wir keine personenbezogenen Daten sammeln, haben Sie keine Rechte auf
+    Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer
+    Daten.
+  </p>
+
+  <h2>Änderungen dieser Datenschutzerklärung</h2>
+
+  <p>
+    Wir können diese Datenschutzerklärung jederzeit ändern, um sie an neue
+    Entwicklungen oder Gesetzesänderungen anzupassen. Bitte beachten Sie daher
+    regelmäßig diese Seite, um sich über eventuelle Änderungen zu informieren.
+  </p>
+
+  <p>
+    Wenn Sie Fragen oder Bedenken bezüglich unserer Datenschutzpraktiken haben,
+    können Sie uns gerne kontaktieren.
+  </p>
+</BaseLayout>
