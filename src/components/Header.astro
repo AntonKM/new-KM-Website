@@ -1,58 +1,63 @@
 ---
-import Hamburger from './Hamburger.astro';
-import { SITE_TITLE } from '../consts';
+import Hamburger from "./Hamburger.astro";
+import { SITE_TITLE } from "../consts";
 ---
 
 <header>
-	<nav>
-		<Hamburger />
-		<h2><a href="/">{SITE_TITLE}</a></h2>
-		<a href="/search" class="nav-link">
-			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-				<circle cx="11" cy="11" r="8"></circle>
-				<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-			</svg>
-		</a>
-		
-	</nav>
+  <nav>
+    <Hamburger />
+    <h2><a href="/">{SITE_TITLE}</a></h2>
+    <a href="/search" class="nav-link">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </a>
+  </nav>
 </header>
 <style>
-	header {
-		margin: 0;
-		margin-bottom: 1em;
-		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 9px rgba(var(--black), 50%);
-	}
-	h2 {
-		font-size: 1em;
-	}
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		text-decoration: none;
-	}
-  	nav svg {
-   		vertical-align:text-top;
-		margin-right: 2px;
-		margin-top: 1px;
-  	}
-	@media (prefers-color-scheme: dark) {
-		header {
-			background: #333333;
-			box-shadow: 0 2px 9px rgba(var(--white), 50%);
-			margin-bottom: 0;
-		}
-		nav a {
-			color: rgb(228, 228, 228);
-		}
-		
-	}
-		
+  header {
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0 1em;
+    background: white;
+    box-shadow: 0 2px 9px rgba(var(--black), 50%);
+  }
+  h2 {
+    font-size: 1em;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav a {
+    padding: 1em 0.5em;
+    color: var(--black);
+    text-decoration: none;
+  }
+  nav svg {
+    vertical-align: text-top;
+    margin-right: 2px;
+    margin-top: 1px;
+  }
+  @media (prefers-color-scheme: dark) {
+    header {
+      background: #333333;
+      box-shadow: 0 2px 9px rgba(var(--white), 50%);
+      margin-bottom: 0;
+    }
+    nav a {
+      color: rgb(228, 228, 228);
+    }
+  }
 </style>
-
