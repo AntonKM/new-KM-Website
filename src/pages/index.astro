@@ -41,6 +41,10 @@ const pagination = {
         text-decoration: none;
         transition: 0.2s ease;
       }
+      ul li img {
+        margin-bottom: 0.5rem;
+        border-radius: 15px;
+      }
       ul li:hover {
         box-shadow: 4.5px 4.5px 9px rgb(5, 255, 167);
         background-color: rgb(var(--white));
@@ -57,11 +61,26 @@ const pagination = {
       ul li:first-child .title {
         font-size: 2.369rem;
       }
-      ul li img {
-        margin-bottom: 0.5rem;
-        border-radius: 15px;
+      ul li:nth-child(4) {
+        width: 100%;
       }
-      ul li a {
+      ul li:nth-child(4) .tags_reading {
+        display: none;
+      }
+      ul li:nth-child(4) img {
+        display: none;
+      }
+      ul li:nth-child(5) {
+        width: 100%;
+      }
+      ul li:nth-child(5) .tags_reading {
+        display: none;
+      }
+      ul li:nth-child(5) img {
+        display: none;
+      }
+
+      ul li img ul li a {
         display: block;
       }
       .title {
@@ -99,6 +118,7 @@ const pagination = {
       .tags_reading {
         color: rgb(114, 114, 114);
       }
+
       @media (prefers-color-scheme: dark) {
         main {
           background-color: #2f2f2f;
@@ -122,7 +142,7 @@ const pagination = {
     <Header />
     <main>
       <TagMap />
-      <section>
+      <section class="blog">
         <ul>
           {
             posts.slice(0, pagination.pageSize).map((post) => (
