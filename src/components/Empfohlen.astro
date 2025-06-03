@@ -1,0 +1,111 @@
+---
+import { getCollection } from "astro:content";
+import FormattedDate from "../components/FormattedDate.astro";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  const empfohlen = new Set(posts.flatMap((post) => post.data.empfohlen || []));
+  return Array.from(empfohlen).map((empfohlen) => ({ params: { empfohlen } }));
+}
+const filteredPosts = posts.filter((post) => post.data.empfohlen === true);
+---
+
+<style>
+  .empfohlen {
+    background-color: rgb(61, 61, 61);
+    padding: 1.5em;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(5, 255, 230);
+    background-color: rgb(var(--white));
+    margin-top: 5em;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style-type: none;
+    margin: 3em;
+    padding: 0;
+  }
+  ul li {
+    padding: 2rem;
+    border-radius: 15px;
+  }
+  ul li * {
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+  ul li img {
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+  }
+  ul li img ul li a {
+    display: block;
+  }
+  h3 {
+    text-align: center;
+  }
+  .title {
+    margin: 0;
+    color: rgb(var(--black));
+    line-height: 1;
+  }
+  .date {
+    margin: 0;
+    color: rgb(var(--black));
+  }
+
+  @media (max-width: 720px) {
+    ul {
+      gap: 0.5em;
+    }
+    ul li {
+      width: 100%;
+      text-align: center;
+    }
+    ul li img {
+      border-radius: 8cm;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    main {
+      background-color: #2f2f2f;
+    }
+    ul li a {
+      color: rgb(228, 228, 228);
+    }
+    .title {
+      color: rgb(228, 228, 228);
+    }
+    .date {
+      color: rgb(228, 228, 228);
+    }
+  }
+  .hr {
+  }
+</style>
+
+<div class="empfohlen">
+  <h3>Von der Redaktion empfohlen</h3>
+  <hr />
+  <ul>
+    {
+      filteredPosts.map((post) => (
+        <li>
+          <a href={`/${post.id}/`}>
+            <div class="text-container">
+              <h4 class="title">{post.data.title}</h4>
+              <p class="date">
+                <FormattedDate date={post.data.pubDate} />
+              </p>
+            </div>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>

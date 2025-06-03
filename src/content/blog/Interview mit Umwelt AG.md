@@ -6,6 +6,7 @@ tags:
   - Lifestyle
 description: Wir haben ein Interview mit der Umwelt AG des Albert-Einstein Gymnasiums Ulm/Wiblingen geführt.
 author: Anton
+empfohlen: true
 readingtime: 7 Min
 pubTime: 14:30
 ---

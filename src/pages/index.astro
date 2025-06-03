@@ -6,13 +6,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { getCollection } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 import TagMap from "../components/TagMap.astro";
+import Empfohlen from "../components/Empfohlen.astro";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
 const pagination = {
-  pageSize: 21,
+  pageSize: 9,
 };
 ---
 
@@ -43,10 +44,11 @@ const pagination = {
       }
       ul li img {
         margin-bottom: 0.5rem;
-        border-radius: 15px;
+        border-radius: 10px;
       }
       ul li:hover {
-        box-shadow: 4.5px 4.5px 9px rgb(5, 255, 167);
+        box-shadow: 0 0 10px rgb(5, 255, 167);
+        transition: 0.25s ease;
         background-color: rgb(var(--white));
       }
       ul li:first-child {
@@ -61,25 +63,6 @@ const pagination = {
       ul li:first-child .title {
         font-size: 2.369rem;
       }
-      ul li:nth-child(4) {
-        width: 100%;
-      }
-      ul li:nth-child(4) .tags_reading {
-        display: none;
-      }
-      ul li:nth-child(4) img {
-        display: none;
-      }
-      ul li:nth-child(5) {
-        width: 100%;
-      }
-      ul li:nth-child(5) .tags_reading {
-        display: none;
-      }
-      ul li:nth-child(5) img {
-        display: none;
-      }
-
       ul li img ul li a {
         display: block;
       }
@@ -92,9 +75,8 @@ const pagination = {
         margin: 0;
         color: rgb(var(--black));
       }
-      ul li a:hover h4,
-      ul li a:hover .date {
-        color: rgb(var(--accent));
+      .text-container {
+        flex-grow: 1;
       }
       @media (max-width: 720px) {
         ul {
@@ -103,6 +85,9 @@ const pagination = {
         ul li {
           width: 100%;
           text-align: center;
+        }
+        ul li img {
+          border-radius: 8cm;
         }
         ul li:first-child {
           margin-bottom: 0;
@@ -154,21 +139,24 @@ const pagination = {
                     src={post.data.heroImage}
                     alt=""
                   />
-                  <h4 class="title">{post.data.title}</h4>
-                  <p class="date">
-                    <FormattedDate date={post.data.pubDate} />
-                  </p>
-                  <p class="description">{post.data.description}</p>
-                  <p class="tags_reading">
-                    🏷️{post.data.tags} |🕛{post.data.readingtime} |🖊️
-                    {post.data.author}
-                  </p>
+                  <div class="text-container">
+                    <h4 class="title">{post.data.title}</h4>
+                    <p class="date">
+                      <FormattedDate date={post.data.pubDate} />
+                    </p>
+                    <p class="description">{post.data.description}</p>
+                    <p class="tags_reading">
+                      🏷️{post.data.tags} |🕛{post.data.readingtime} |🖊️
+                      {post.data.author}
+                    </p>
+                  </div>
                 </a>
               </li>
             ))
           }
         </ul>
       </section>
+      <Empfohlen />
     </main>
     <Footer />
   </body>

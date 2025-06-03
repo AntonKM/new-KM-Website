@@ -15,6 +15,7 @@ const blog = defineCollection({
 		heroImage: z.string().optional(),
 		author : z.string().optional(),
 		readingtime : z.string().optional(),
+		empfohlen: z.boolean().optional(),
 	}),
 });
 

@@ -5,6 +5,7 @@ title: Die 5 wichtigsten Events in Ulm, Neu-Ulm und Umgebung im Sommer 2025
 tags:
   - Kultur
 description: Ich stelle euch die 5 wichtigsten Events und Veranstaltungen in Ulm, Neu-Ulm und Umgebung im Sommer 2025
+empfohlen: true
 author: Anton
 readingtime: 4 Min
 pubTime: 14:30
