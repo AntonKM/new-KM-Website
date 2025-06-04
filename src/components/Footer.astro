@@ -3,96 +3,94 @@ const today = new Date();
 ---
 
 <footer>
-	<div class="footer-top">
-		<img src="/Logo.png" alt="Keks Magazin Logo" width="70" height="70" />
-		<h4>Keks Magazin</h4>
-	</div>
-	<div class="footer-bottom">
-		<div class="footer-item">
-			<h5>Social</h5>
-			<a href="https://www.instagram.com/keks.magazin">Instagram</a><br>
-			<a href="https://bsky.app/profile/keks-magazin.de">Bluesky</a><br>
-			<a href="https://www.youtube.com/@Keks-Magazin">YouTube</a><br>
-			<a href="https://whatsapp.com/channel/0029Vak5TC85Ui2bu0KfWm0T">WhatsApp Kanal</a><br>
-			<a href="/rss.xml">RSS Feed</a><br>
-			<br>
-		</div>
-		<div class="footer-item">
-			<h5>Seiten</h5>
-			<a href="/">Startseite</a><br>
-			<a href="/podcast">Podcast</a><br>
-			<a href="/about">Über uns</a><br>
-			<a href="/search">Suche</a><br>
-			<br>
-			<br>
-		</div>
-		<div class="footer-item">
-			<h5>Themen</h5>
-			<a href="/tags/reportagen">Reportagen</a><br>
-			<a href="/tags/lifestyle">Lifestyle</a><br>
-			<a href="/tags/öpnv">ÖPNV</a><br>
-			<a href="/tags/kultur">Kultur</a><br>
-			<a href="/tags/stadtpoltik">Stadtpolitik</a><br>
-			<a href="/tags/interviews">Interviews</a><br>
-	</div>
-	<br>
-	&copy; {today.getFullYear()} Keks Magazin. All rights reserved.
-	<br />
-	<p><a href="/impressum">Impressum</a> |
-	<a href="/datenschutz">Datenschutz</a></p>
+  <div class="footer-top">
+    <img src="/Logo.png" alt="Keks Magazin Logo" width="70" height="70" />
+    <h4>Keks Magazin</h4>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-item">
+      <h5>Social</h5>
+      <a href="https://www.instagram.com/keks.magazin">Instagram</a><br />
+      <a href="https://bsky.app/profile/keks-magazin.de">Bluesky</a><br />
+      <a href="https://www.youtube.com/@Keks-Magazin">YouTube</a><br />
+      <a href="https://whatsapp.com/channel/0029Vak5TC85Ui2bu0KfWm0T"
+        >WhatsApp Kanal</a
+      ><br />
+      <a href="/rss.xml">RSS Feed</a><br />
+      <br />
+    </div>
+    <div class="footer-item">
+      <h5>Seiten</h5>
+      <a href="/">Startseite</a><br />
+      <a href="/podcast">Podcast</a><br />
+      <a href="/about">Über uns</a><br />
+      <a href="/search">Suche</a><br />
+      <br />
+      <br />
+    </div>
+    <div class="footer-item">
+      <h5>Themen</h5>
+      <a href="/tags/reportagen">Reportagen</a><br />
+      <a href="/tags/lifestyle">Lifestyle</a><br />
+      <a href="/tags/öpnv">ÖPNV</a><br />
+      <a href="/tags/kultur">Kultur</a><br />
+      <a href="/tags/stadtpoltik">Stadtpolitik</a><br />
+      <a href="/tags/interviews">Interviews</a><br />
+    </div>
+    <br />
+    &copy; {today.getFullYear()} Keks Magazin. Alle Rechte vorbehalten.
+    <br />
+  </div>
+  <style is:global>
+    footer {
+      padding: 2em 1em 6em 1em;
+      background: linear-gradient(var(--gray-gradient)) no-repeat;
+      color: rgb(var(--gray));
+      text-align: center;
+    }
+    img {
+      border-radius: 0.2em;
+      margin-right: 2em;
+      margin-bottom: 1em;
+    }
+    a {
+      color: rgb(var(--gray));
+      text-decoration: none;
+    }
+    .footer-top {
+      display: flex;
+    }
+    h4 {
+      margin-top: 0.5em;
+      margin-left: 1em;
+    }
 
+    .footer-item {
+      display: inline-block;
+      margin: 2em 2em;
+      text-align: center;
+    }
+    .footer-item a {
+      font-size: 1em;
+    }
+    @media (max-width: 720px) {
+      .footer-item {
+        display: block;
+        margin: 1em 0;
+      }
+    }
+    @media (prefers-color-scheme: dark) {
+      footer {
+        background: #333333;
+        color: rgb(187, 187, 187);
+      }
+      a {
+        color: rgb(187, 187, 187);
+      }
+      h4,
+      h5 {
+        color: rgb(228, 228, 228);
+      }
+    }
+  </style>
 </footer>
-<style is:global>
-	footer {
-		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
-		color: rgb(var(--gray));
-		text-align: center;
-	}
-	img {
-		border-radius: 0.2em;
-		margin-right: 0rem;
-		margin-bottom: 1em;
-	}
-	a {
-		color: rgb(var(--gray));
-		text-decoration: none;
-	}
-	.footer-top {
-		display: flex;
-	}
-	h4 {
-		margin-top: 0.9em;
-		margin-left: 1em;
-	}
-
-	.footer-item {
-		display: inline-block;
-		margin: 2em 2em;
-		text-align: center;
-	}
-	.footer-item a {
-		font-size: 1em;
-	}
-	@Media (max-width: 720px) {
-		.footer-item {
-			display: block;
-			margin: 1em 0;
-		}
-	}
-	@media (prefers-color-scheme: dark) {
-		footer {
-			background: #333333;
-			color: rgb(187, 187, 187);
-		}
-		a {
-			color: rgb(187, 187, 187);
-		}
-		h4,
-		h5 {
-			color: rgb(228, 228, 228);
-		}
-
-
-	}
-</style>

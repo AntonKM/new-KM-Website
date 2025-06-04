@@ -20,28 +20,18 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     margin: 0 auto;
     padding: 1rem;
   }
-  .container1 {
-    border: 1px solid rgb(5, 255, 167);
+  .container {
+    box-shadow: 0 0 8px rgb(5, 255, 230);
     border-radius: 25px;
     margin: 1em;
-    padding: 1%;
-  }
-  .container1 iframe {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-  }
-  .container2 {
-    border: 1px solid rgb(5, 255, 167);
-    border-radius: 25px;
-    margin: 1em;
+    margin-bottom: 2em;
     padding: 2rem;
   }
 </style>
 <BaseLayout>
   <h1>Podcast 🎙️</h1>
   <h3>Hier findest du alles zu unserem Podcast</h3>
-  <div class="container2">
+  <div class="container">
     <h4>Über unseren Podcast</h4>
     <p>
       Unser Podcast ULMCAST (ehemals Keks Magazin) ist ein Podcast über Ulm, um
@@ -50,7 +40,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       selbstverständlich weiterhin ein Thema aus der aktuellen Politik.
     </p>
   </div>
-  <div class="">
+  <div class="container">
     <h4>Höre dir unseren Podcast hier an</h4>
     <iframe
       allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
@@ -61,7 +51,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       src="https://embed.podcasts.apple.com/de/podcast/ulmcast-der-podcast-f%C3%BCr-ulm-und-umgebung/id1778930782"
     ></iframe>
   </div>
-  <div class="container2">
+  <div class="container">
     <h4>Plattformen auf denen unser Podcast vefügbar ist</h4>
     <p>
       Unser Podcast ist auf <a

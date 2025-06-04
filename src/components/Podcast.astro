@@ -1,0 +1,74 @@
+---
+
+---
+
+<style>
+  .empfohlen {
+    background-color: rgb(61, 61, 61);
+    padding: 1.5em;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(5, 255, 230);
+    background-color: rgb(var(--white));
+    margin-top: 5em;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style-type: none;
+    margin: 3em;
+    padding: 0;
+  }
+  h5 {
+    text-align: center;
+    margin-bottom: 1.5em;
+  }
+  h3 {
+    text-align: center;
+  }
+  @media (max-width: 720px) {
+    ul {
+      gap: 0.5em;
+    }
+    ul li {
+      width: 100%;
+      text-align: center;
+    }
+    ul li img {
+      border-radius: 8cm;
+    }
+  }
+  a {
+    padding: 0.3em 0.7em;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #616161;
+    margin-left: 1em;
+  }
+  a:hover {
+    box-shadow: 0 0 8px rgb(226, 85, 85);
+    color: rgb(var(--gray-dark));
+  }
+  @media (prefers-color-scheme: dark) {
+    main {
+      background-color: #2f2f2f;
+    }
+    a:hover {
+      color: rgb(228, 228, 228);
+    }
+  }
+  .item {
+  }
+</style>
+
+<div class="empfohlen">
+  <h3>Podcasts</h3>
+  <ul>
+    <div class="item">
+      <h5>ULMCAST - Der Podcast für Ulm und Umgebung</h5>
+      <a>Apple Podcasts</a>
+      <a>Spotify</a>
+      <a>Amazon Music</a>
+      <a>Deezer</a>
+    </div>
+  </ul>
+</div>

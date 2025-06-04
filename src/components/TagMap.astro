@@ -1,59 +1,58 @@
 ---
+
 ---
 
 <div class="tagmap__container">
-    <div class="tagmap__item">
-        <a href="/" class="tagmap__link">Home</a>
-    </div>
-    <div class="tagmap__item">
-        <a href="/tags/Kultur" class="tagmap__link">Kultur</a>
-    </div>
-    <div class="tagmap__item">
-        <a href="/tags/Lifestyle" class="tagmap__link">Lifestyle</a>
-    </div>
-    <div class="tagmap__item">
-        <a href="/tags/oepnv" class="tagmap__link">ÖPNV</a>
-    </div>
-    <div class="tagmap__item">
-        <a href="/tags/stadtpolitik" class="tagmap__link">Stadtpolitik</a>
-    </div>
-    <div class="tagmap__item">
-        <a href="/tags/interviews" class="tagmap__link">Interviews</a>
-    </div>
+  <div class="tagmap__item">
+    <a href="/" class="tagmap__link">Home</a>
+  </div>
+  <div class="tagmap__item">
+    <a href="/tags/Kultur" class="tagmap__link">Kultur</a>
+  </div>
+  <div class="tagmap__item">
+    <a href="/tags/Lifestyle" class="tagmap__link">Lifestyle</a>
+  </div>
+  <div class="tagmap__item">
+    <a href="/tags/oepnv" class="tagmap__link">ÖPNV</a>
+  </div>
+  <div class="tagmap__item">
+    <a href="/tags/stadtpolitik" class="tagmap__link">Stadtpolitik</a>
+  </div>
+  <div class="tagmap__item">
+    <a href="/tags/interviews" class="tagmap__link">Interviews</a>
+  </div>
 </div>
 
 <style>
+  .tagmap__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    margin: 0.5em 0em;
+    margin-bottom: 1em;
+  }
+  .tagmap__item {
+    padding: 0.2em 0.9em;
+    border-radius: 20px;
+    box-shadow: 0 0 4px #616161;
+  }
+  .tagmap__link {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9em;
+  }
+  .tagmap__item:hover {
+    box-shadow: 0 0 8px rgb(5, 255, 167);
+  }
+  @media (max-width: 720px) {
     .tagmap__container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1em;
-        justify-content: center;
-        margin: 0.5em 0em;
-        margin-bottom: 1em;
+      display: none;
     }
-    .tagmap__item {
-        padding: 0.2em 0.9em;
-        border-radius: 20px;
-        box-shadow: 1px 1px 2px #616161;
-    }
+  }
+  @media (prefers-color-scheme: dark) {
     .tagmap__link {
-        text-decoration: none;
-        color: #000;
-        font-size: 0.9em;
-        
+      color: rgb(201, 201, 201);
     }
-
-    .tagmap__item:hover {
-        box-shadow: 2px 2px 4px rgb(5, 255, 167);
-    }
-    @media (max-width: 720px) {
-        .tagmap__container {
-            display: none;
-        }
-    }
-    @media (prefers-color-scheme: dark) {
-        .tagmap__link {
-            color: rgb(201, 201, 201);
-        }	
-	}
+  }
 </style>

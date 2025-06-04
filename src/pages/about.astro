@@ -1,86 +1,113 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import Layout from "../layouts/BlogPost.astro";
 ---
 
 <Layout
-	title="Über uns"
-	description="Hier erfährst du alles über Keks Magazin"
-	pubDate={new Date('February 9, 2025')}
-	heroImage="/aboutus.png"
-	author="Keks Magazin"
-	readingtime="4 Min"
-	tags={["Über uns"]}
+  title="Über uns"
+  description="Hier erfährst du alles über Keks Magazin"
+  pubDate={new Date("February 9, 2025")}
+  heroImage="/aboutus.png"
+  author="Keks Magazin"
+  readingtime="4 Min"
+  tags={["Über uns"]}
 >
-	<h3>
-		Wer ist Keks Magazin?
-	</h3>
-	<p>
-		Keks Magazin ist ein unabhängiges, nicht kommerzielles Freizeitprojekt von Jugendlichen aus Ulm und Neu-Ulm.
-	</p>
-	<h3>
-		Wieso machen wir das?
-	</h3>
-	<p>
-		Wir wollen eine seriöses journalistisches Magazin für Jugendliche von Jugendlichen sein. Außerdem versuchen wir allen Kindern und Jugendlichen durch unsere Podcasts die Politik näherzubringen. 
-	</p>
-	<h3>
-		Was sind unsere Themen?
-	</h3>
-	<p>
-		Wir beschäftigen uns mit einer Vielzahl verschiedenster Themen wie zum Beispiel Stadtpolitik, Kultur, Lifestyle und ÖPNV. <br>
-
-	</p>
-	<h3>
-		Was machen wir?
-	</h3>
-	<p>
-		Auf unserer Website beröffentlichen wir Artikel und Beiträge zu unseren Themengebieten in Ulm, um Ulm und um Ulm herum. Dabei versuchen wir unsere journalistischen Kenntnisse und Fähigkeiten weiterzuentwickeln.<br>
-		ULMCAST, unser Podcast ist einer der wichtigsten Bestandteile von Keks Magazin: Jede Woche sprechen wir über drei aktuelle Themen auß Ulm, Neu-Ulm und Umgebung. Dabei versuchen wir nach udn nach auch zu den Themen die im Podcast behandelt werden auch Artikel zum Nachlesen zu schreiben. Ein anderer Teil des Podcasts beschäftigt sich mit einem aktuellen Thema aus der Politik, wobei wir versuchen alles möglichst einfach zu erklären. <br>
-	</p>
-	<h3>
-		Wo ist unser Podcast zu finden?
-	</h3>
-	<p>
-		Unser Podcast ist auf <a href="https://open.spotify.com/show/4K4jrmdHuvpU2hTvsyIYPL">Spotify</a>, <a href="https://music.amazon.de/podcasts/7f9d972b-314f-418e-86eb-d7ae4a4aeeb6/keks-magazin">Amazon Music</a>, <a href="https://podcasts.apple.com/us/podcast/keks-magazin/id1778930782">Apple Podcasts</a>, <a href="https://overcast.fm/itunes1778930782">Overcast</a>,<a href="https://www.podchaser.com/podcasts/ulmcast-der-podcast-fur-ulm-un-5889867">Podchaser</a>,<a href="https://www.deezer.com/de/show/1001488731">Deezer</a>,<a href="https://castbox.fm/channel/Keks-Magazin-id6346820?country=de">Castbox</a>, <a href="https://plus.rtl.de/podcast/ulmcast-der-podcast-fuer-ulm-und-umgebung-1an8ymco2zyzx">RTL+ Music,</a> und <a href="https://goodpods.com/podcasts/ulmcast-der-podcast-für-ulm-und-umgebung-612191">Goodpods</a> verfügbar.
-	</p>
-	<h3>
-		Macht ihr auch Interviews?
-	</h3>
-	<p>
-		Ja, wir haben auf jeden Fall vor Interviews zu führen. <br>
-		Falls du eine Idee hast, mit wem wir ein Interview führen können, schreib uns einfach eine E-Mail. Die E-Mail Adresse findest du beim Punkt "Wie kann ich mit Keks Magazin in Kontakt treten?".
-	</p>
-	<h3>
-		Wie kann ich Keks Magazin unterstützen?
-	</h3>
-	<p>
-		Es gibt viele Möglichkeiten, wie du uns unterstützen kannst. <br>
-		Du kannst unsere Artikel, Social Media Beträge und Podcastfolgen mit deinen Freunden, Familienmitgliedern und Kollegen teilen. Auch würden wir uns sehr freuen wenn du uns auf Social Media folgen würdest und unseren Podcast abonnierst. <br>
-		Momentan bieten wir noch keine Möglichkeit an uns finanziell zu unterstützen, aber wir arbeiten daran. 
-	</p>
-	<h3>
-		Wie kann ich mit Keks Magazin in Kontakt treten?
-	</h3>
-	<p>
-		Am Besten du schreibst uns eine E-Mail an <a href="Mailto:Kontakt@Keks-Magazin.de">Kontakt@Keks-Magazin.de</a> .
-	</p>
-	<h3>
-		Wo finde ich neueste Nachrichten von Keks Magazin?
-	</h3>
-	<p>
-		In unserem <a href="https://www.instagram.com/keks.magazin/">Instagram Kanal</a>,in unserem<a href="https://bsky.app/profile/keks-magazin.de"> Bluesky Kanal</a> und in unserem <a href="https://whatsapp.com/channel/0029Vak5TC85Ui2bu0KfWm0T">WhatsApp Kanal</a> findest du immer die aktuellsten Neuigkeiten rund um Keks Magazin.
-	</p>
-	<h3>
-		Kann ich Vorschläge/Ideen einbringen?
-	</h3>
-	<p>
-		Ja, klar! Wir freuen uns immer über Anregungen und Wünsche. 
-		Schreib uns einfach eine E-Mail an <a href="Mailto:Kontakt@Keks-Magazin.de">Kontakt@Keks-Magazin.de</a> .
-	</p>
-	<h3>
-		Was tun, wenn es auf der Website ein Problem gibt?
-	</h3>
-	<p>
-		Wenn du auf der Website einen Fehler findest, zum Beispiel wenn irgendein Link nicht funktioniert oder etwas falsch angezeigt wird, kannst du dich an <a href="mailto:anton@keks-magazin.de">Anton@Keks-Magazin.de</a> wenden. 
-	</p>
+  <h3>Wer ist Keks Magazin?</h3>
+  <p>
+    Keks Magazin ist ein unabhängiges, nicht kommerzielles Freizeitprojekt von
+    Jugendlichen aus Ulm und Neu-Ulm.
+  </p>
+  <h3>Wieso machen wir das?</h3>
+  <p>
+    Wir wollen eine seriöses journalistisches Magazin für Jugendliche von
+    Jugendlichen sein. Außerdem versuchen wir allen Kindern und Jugendlichen
+    durch unsere Podcasts die Politik näherzubringen.
+  </p>
+  <h3>Was sind unsere Themen?</h3>
+  <p>
+    Wir beschäftigen uns mit einer Vielzahl verschiedenster Themen wie zum
+    Beispiel Stadtpolitik, Kultur, Lifestyle und ÖPNV. <br />
+  </p>
+  <h3>Was machen wir?</h3>
+  <p>
+    Auf unserer Website beröffentlichen wir Artikel und Beiträge zu unseren
+    Themengebieten in Ulm, um Ulm und um Ulm herum. Dabei versuchen wir unsere
+    journalistischen Kenntnisse und Fähigkeiten weiterzuentwickeln.<br />
+    ULMCAST, unser Podcast ist einer der wichtigsten Bestandteile von Keks Magazin:
+    Jede Woche sprechen wir über drei aktuelle Themen auß Ulm, Neu-Ulm und Umgebung.
+    Dabei versuchen wir nach udn nach auch zu den Themen die im Podcast behandelt
+    werden auch Artikel zum Nachlesen zu schreiben. Ein anderer Teil des Podcasts
+    beschäftigt sich mit einem aktuellen Thema aus der Politik, wobei wir versuchen
+    alles möglichst einfach zu erklären. <br />
+  </p>
+  <h3>Wo ist unser Podcast zu finden?</h3>
+  <p>
+    Unser Podcast ist auf <a
+      href="https://open.spotify.com/show/4K4jrmdHuvpU2hTvsyIYPL">Spotify</a
+    >, <a
+      href="https://music.amazon.de/podcasts/7f9d972b-314f-418e-86eb-d7ae4a4aeeb6/keks-magazin"
+      >Amazon Music</a
+    >, <a href="https://podcasts.apple.com/us/podcast/keks-magazin/id1778930782"
+      >Apple Podcasts</a
+    >, <a href="https://overcast.fm/itunes1778930782">Overcast</a>,<a
+      href="https://www.podchaser.com/podcasts/ulmcast-der-podcast-fur-ulm-un-5889867"
+      >Podchaser</a
+    >,<a href="https://www.deezer.com/de/show/1001488731">Deezer</a>,<a
+      href="https://castbox.fm/channel/Keks-Magazin-id6346820?country=de"
+      >Castbox</a
+    >, <a
+      href="https://plus.rtl.de/podcast/ulmcast-der-podcast-fuer-ulm-und-umgebung-1an8ymco2zyzx"
+      >RTL+ Music,</a
+    > und <a
+      href="https://goodpods.com/podcasts/ulmcast-der-podcast-für-ulm-und-umgebung-612191"
+      >Goodpods</a
+    > verfügbar.
+  </p>
+  <h3>Macht ihr auch Interviews?</h3>
+  <p>
+    Ja, wir haben auf jeden Fall vor Interviews zu führen. <br />
+    Falls du eine Idee hast, mit wem wir ein Interview führen können, schreib uns
+    einfach eine E-Mail. Die E-Mail Adresse findest du beim Punkt "Wie kann ich mit
+    Keks Magazin in Kontakt treten?".
+  </p>
+  <h3>Wie kann ich Keks Magazin unterstützen?</h3>
+  <p>
+    Es gibt viele Möglichkeiten, wie du uns unterstützen kannst. <br />
+    Du kannst unsere Artikel, Social Media Beträge und Podcastfolgen mit deinen Freunden,
+    Familienmitgliedern und Kollegen teilen. Auch würden wir uns sehr freuen wenn
+    du uns auf Social Media folgen würdest und unseren Podcast abonnierst. <br
+    />
+    Momentan bieten wir noch keine Möglichkeit an uns finanziell zu unterstützen,
+    aber wir arbeiten daran.
+  </p>
+  <h3>Wie kann ich mit Keks Magazin in Kontakt treten?</h3>
+  <p>
+    Am Besten du schreibst uns eine E-Mail an <a
+      href="Mailto:Kontakt@Keks-Magazin.de">Kontakt@Keks-Magazin.de</a
+    > .
+  </p>
+  <h3>Wo finde ich neueste Nachrichten von Keks Magazin?</h3>
+  <p>
+    In unserem <a href="https://www.instagram.com/keks.magazin/"
+      >Instagram Kanal</a
+    >,in unserem<a href="https://bsky.app/profile/keks-magazin.de">
+      Bluesky Kanal</a
+    > und in unserem <a
+      href="https://whatsapp.com/channel/0029Vak5TC85Ui2bu0KfWm0T"
+      >WhatsApp Kanal</a
+    > findest du immer die aktuellsten Neuigkeiten rund um Keks Magazin.
+  </p>
+  <h3>Kann ich Vorschläge/Ideen einbringen?</h3>
+  <p>
+    Ja, klar! Wir freuen uns immer über Anregungen und Wünsche. Schreib uns
+    einfach eine E-Mail an <a href="Mailto:Kontakt@Keks-Magazin.de"
+      >Kontakt@Keks-Magazin.de</a
+    > .
+  </p>
+  <h3>Was tun, wenn es auf der Website ein Problem gibt?</h3>
+  <p>
+    Wenn du auf der Website einen Fehler findest, zum Beispiel wenn irgendein
+    Link nicht funktioniert oder etwas falsch angezeigt wird, kannst du dich an <a
+      href="mailto:anton@keks-magazin.de">Anton@Keks-Magazin.de</a
+    > wenden.
+  </p>
 </Layout>
