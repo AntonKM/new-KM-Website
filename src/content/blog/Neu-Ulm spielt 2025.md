@@ -1,7 +1,7 @@
 ---
 pubDate: Jul 7 2025
 heroImage: /placeholder2.png
-title: Neu-Ulm spielt 2025
+title: Neu-Ulm spielt 2025, 10 Jahre Jubiläum
 tags:
   - Kultur
 description: So war das 10.  Neu-Ulm spielt im Juni
@@ -10,6 +10,7 @@ author: Lennert
 readingtime: 1 Min
 pubTime: 20:10
 ---
+
 10 Jahre „Neu-Ulm spielt" - ein gelungenes Jubiläum
 Am Samstag, den 28. Juni 2025, fand in der Neu-Ulmer Innenstadt das Jubiläum des beliebten Spieleaktionstags „Neu-Ulm spielt" statt - und das bereits zum zehnten Mal. Von 12 bis 18 Uhr
 verwandelten sich der Rathausplatz, der Johannesplatz sowie die Ludwigstraße in ein buntes Spielfeld für Groß und Klein.

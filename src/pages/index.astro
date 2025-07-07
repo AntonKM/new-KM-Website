@@ -24,7 +24,7 @@ const pagination = {
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <style>
       main {
-        width: 960px;
+        width: 1000px;
       }
       ul {
         display: flex;
@@ -48,9 +48,9 @@ const pagination = {
         border-radius: 10px;
       }
       ul li:hover {
-        box-shadow: 0 0 10px rgb(5, 255, 167);
-        transition: 0.25s ease;
-        background-color: rgb(var(--white));
+        /*box-shadow: 0 0 10px rgb(5, 255, 167);*/
+        transition: 2s ease;
+        background-color: rgb(234, 234, 234);
       }
       ul li:first-child {
         width: 100%;
@@ -120,6 +120,9 @@ const pagination = {
         }
         .tags_reading {
           color: rgb(228, 228, 228);
+        }
+        ul li:hover {
+          background-color: rgb(39, 39, 39);
         }
       }
     </style>
