@@ -8,6 +8,7 @@ import FormattedDate from "../components/FormattedDate.astro";
 import TagMap from "../components/TagMap.astro";
 import Empfohlen from "../components/Empfohlen.astro";
 import Podcast from "../components/Podcast.astro";
+import Home from "../components/Home.astro";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -88,7 +89,7 @@ const pagination = {
           text-align: center;
         }
         ul li img {
-          border-radius: 8cm;
+          border-radius: 1em;
         }
         ul li:first-child {
           margin-bottom: 0;
@@ -126,6 +127,7 @@ const pagination = {
   </head>
   <body>
     <Header />
+    <Home />
     <main>
       <TagMap />
       <section class="blog">
@@ -146,10 +148,6 @@ const pagination = {
                       <FormattedDate date={post.data.pubDate} />
                     </p>
                     <p class="description">{post.data.description}</p>
-                    <p class="tags_reading">
-                      🏷️{post.data.tags} |🕛{post.data.readingtime} |🖊️
-                      {post.data.author}
-                    </p>
                   </div>
                 </a>
               </li>
