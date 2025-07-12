@@ -1,0 +1,64 @@
+---
+
+---
+
+<style>
+  .empfohlen {
+    background-color: rgb(61, 61, 61);
+    padding: 1.5em;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(5, 255, 230);
+    background-color: rgb(var(--white));
+    margin-top: 5em;
+  }
+  ul {
+    gap: 2rem;
+    margin: 2em;
+    padding: 0;
+    display: flex;
+  }
+  h5 {
+    text-align: left;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+  }
+  h3 {
+    text-align: center;
+  }
+  a {
+    padding: 0.3em 0.7em;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #616161;
+    margin-left: 0em;
+  }
+  a:hover {
+    box-shadow: 0 0 8px rgb(226, 85, 85);
+    color: rgb(var(--gray-dark));
+  }
+  @media (prefers-color-scheme: dark) {
+    main {
+      background-color: #2f2f2f;
+    }
+    a:hover {
+      color: rgb(228, 228, 228);
+    }
+  }
+</style>
+
+<div class="empfohlen">
+  <h3>Autoren</h3>
+  <ul>
+    <div class="item">
+      <h5>Alex</h5>
+      <a href="mailto:alex@keks-magazin.de">E-Mail</a>
+    </div>
+    <div class="item">
+      <h5>Lennert</h5>
+      <a>E-Mail</a>
+    </div>
+    <div class="item">
+      <h5>Anton</h5>
+      <a href="mailto:anton@keks-magazin.de">E-Mail</a>
+    </div>
+  </ul>
+</div>
