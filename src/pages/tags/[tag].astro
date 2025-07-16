@@ -99,9 +99,6 @@ const filteredPosts = posts.filter((post) => post.data.tags?.includes(tag));
         .date {
           color: rgb(228, 228, 228);
         }
-        .tags_reading {
-          color: rgb(228, 228, 228);
-        }
       }
     </style>
   </head>
@@ -129,9 +126,6 @@ const filteredPosts = posts.filter((post) => post.data.tags?.includes(tag));
                       <FormattedDate date={post.data.pubDate} />
                     </p>
                     <p class="description">{post.data.description}</p>
-                    <p class="tags_reading">
-                      🏷️{post.data.tags} |🕛{post.data.readingtime}
-                    </p>
                   </a>
                 </li>
               ))}
