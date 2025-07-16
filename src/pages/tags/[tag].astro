@@ -51,9 +51,10 @@ const filteredPosts = posts.filter((post) => post.data.tags?.includes(tag));
         transition: 0.2s ease;
       }
       ul li:hover {
-        box-shadow: 0 0 10px rgb(5, 255, 167);
-        background-color: rgb(var(--white));
+        transition: 2s ease;
+        background-color: rgb(234, 234, 234);
       }
+
       ul li img {
         margin-bottom: 0.5rem;
         border-radius: 15px;
